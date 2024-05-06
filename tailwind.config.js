@@ -12,13 +12,14 @@ module.exports = {
         transparent: 'transparent',
         'balck': '#000000',
         'white': '#ffffff',
-        'lightblue': '#b4ddd5',
-        'orange': '#f68330',
-        'yellow': '#f7c412',
-        'mediumblue': '#033756',
-        'darkblue': '#08143a',
         'offwhite': '#eef0ee',
-        'activeyellow': '#deb110'
+        'orange': '#f68330',
+        'activeorange': '#db752c',
+        'yellow': '#f7c412',
+        'activeyellow': '#deb110',
+        'lightblue': '#b4ddd5',
+        'mediumblue': '#033756',
+        'darkblue': '#08143a'
       },
 
       spacing: {

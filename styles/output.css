@@ -715,6 +715,11 @@ video {
   clear: none;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -727,6 +732,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .box-border {
@@ -838,6 +847,14 @@ video {
 
 .h-50px {
   height: 50px;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-8 {
@@ -1832,6 +1849,11 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-lightblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(180 221 213 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1952,6 +1974,10 @@ video {
   padding-right: 0.5rem;
 }
 
+.pt-50px {
+  padding-top: 50px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2012,9 +2038,23 @@ video {
   font-family: Playfair Display, Georgia, serif;
 }
 
+.font-source {
+  font-family: Source Sans 3, Arial, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -2096,6 +2136,16 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-darkblue {
+  --tw-text-opacity: 1;
+  color: rgb(8 20 58 / var(--tw-text-opacity));
+}
+
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(246 131 48 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2475,6 +2525,7 @@ video {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /*border: 1px dotted red;*/
 }
 
 html {
@@ -2522,6 +2573,11 @@ html {
   font-weight: 700;
 }
 
+.hover\:text-orange:hover {
+  --tw-text-opacity: 1;
+  color: rgb(246 131 48 / var(--tw-text-opacity));
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -2540,6 +2596,11 @@ html {
   text-align: center;
 }
 
+.active\:text-activeorange:active {
+  --tw-text-opacity: 1;
+  color: rgb(219 117 44 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(247 196 18 / var(--tw-bg-opacity));
@@ -2553,6 +2614,18 @@ html {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
