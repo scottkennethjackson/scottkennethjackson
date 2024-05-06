@@ -6,7 +6,7 @@
     <meta name="author" content="Scott Kenneth Jackson">
     <meta name="description" content="The personal portfolio page of Scott Kenneth Jackson, Front-End Developer">
 
-    <title>Scott Kenneth Jackson | Front End Developer</title>
+    <title>Scott Kenneth Jackson | Front-End Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +25,10 @@
   <body>
     <nav class="h-50px w-screen px-2 fixed flex items-center justify-between bg-gray-900" role="navigation">
       <h1 class="font-playfair text-2xl text-white">Scott Kenneth Jackson</h1>
-      <button class="container group w-8" role="button">
-        <span class="h-0.5 my-1.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
-        <span class="h-0.5 my-1.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
-        <span class="h-0.5 my-1.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
+      <button class="container group w-8 space-y-1.5" role="button">
+        <span class="h-0.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
+        <span class="h-0.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
+        <span class="h-0.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
       </button>
     </nav>
     <main class="h-screen snap-y snap-mandatory overflow-scroll" role="main">
@@ -36,13 +36,29 @@
         <div class="container text-center">
           <h2 class="font-playfair text-5xl text-darkblue md:text-8xl">Hi! I'm Scott</h2>
           <h3 class="font-source text-xl text-orange md:text-4xl">I make things on the internet</h3>
-          <div class="container mt-4 md:mt-8">
-            <a href="mailto:hello@scottkennethjackson.co.uk?subject=Hello, Scott!" class="mx-2 text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl md:mx-4" role="button" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" class="mx-2 text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl md:mx-4" role="button" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/scottkennethjackson" class="mx-2 text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl md:mx-4" role="button" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://instagram.com/skjdotcodotuk" class="mx-2 text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl md:mx-4" role="button" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="./docs/Scott Kenneth Jackson's CV.pdf" class="mx-2 text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl md:mx-4" role="button" download><i class="fa-regular fa-file-lines"></i></a>
+          <div class="container mt-4 space-x-2 md:mt-8 md:space-x-4">
+            <a href="mailto:hello@scottkennethjackson.co.uk?subject=Hello, Scott!" target="_blank" class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" target="_blank" class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/scottkennethjackson" target="_blank" class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/skjdotcodotuk" target="_blank" class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./docs/Scott Kenneth Jackson's CV.pdf" download class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-regular fa-file-lines"></i></a>
           </div>
+        </div>
+      </section>
+
+      <section id="about" class="min-h-screen pt-50px px-2 flex items-center justify-center snap-start bg-yellow">
+        <div class="container my-2 space-y-2 flex flex-col items-center lg:space-x-4 lg:space-y-0 lg:flex-row">
+          <img src="./images/illustration.png" alt="An illustration of Scott" id="illustration" class=" h-fit w-1/2 mx-auto border-2 border-black rounded-full justify-center lg:w-1/3">
+          <div class="container space-y-2">
+            <div class="container text-xl">
+              <h2 class="font-playfair">Hello, there!</h2>
+              <h3 class="font-source">My name is Scott and I'm a Front-End Developer</h3>
+            </div>
+            <div class="container space-y-4">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis quam eget commodo consequat. Pellentesque id urna luctus, venenatis elit nec, sodales risus. Nunc ac euismod arcu. Suspendisse porta, nisi vitae dapibus lobortis, est leo cursus orci, vitae malesuada arcu sapien fermentum nibh. Curabitur dictum convallis est auctor venenatis. In lobortis neque velit, id tincidunt tortor viverra et. Fusce egestas mollis volutpat. Aliquam mollis viverra est, et tristique dolor tincidunt ut. Cras pretium nunc sed ligula iaculis iaculis. In molestie pulvinar ex non porttitor. Phasellus nec condimentum dui.</p>
+              <p>Duis auctor malesuada ligula, cursus sollicitudin dolor imperdiet ac. Proin pretium leo vel arcu pretium, et ornare est feugiat. Phasellus nunc urna, porta id risus ac, finibus porttitor ipsum. Vivamus eleifend iaculis quam, vitae tristique massa accumsan vitae. Nullam felis tortor, euismod non velit in, laoreet interdum orci. Nunc ultrices luctus tempor. Sed pharetra semper sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec a est vitae elit vestibulum cursus. Nullam tincidunt libero a purus aliquam iaculis. Proin fringilla eros a scelerisque mollis. Donec vel erat urna. Aenean malesuada purus vel erat sagittis commodo. Nunc sagittis nisi sed dolor aliquet, vitae placerat nisi finibus. Donec viverra, nisl ac pharetra mollis, massa mi porttitor elit, congue viverra quam lorem sed erat.</p>
+          </div>
+        </div>
         </div>
       </section>
     </main>
