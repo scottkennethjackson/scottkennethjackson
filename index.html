@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,40 +23,44 @@
     <script src="https://kit.fontawesome.com/b974d1263b.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="h-50px w-screen px-2 fixed flex items-center justify-between bg-gray-900" role="navigation">
+    <!-- Navbar section -->
+    <nav class="flex fixed justify-between items-center z-50 w-screen h-nav shadow bg-gray-900 px-4" role="navigation">
       <h1 class="font-playfair text-2xl text-white">Scott Kenneth Jackson</h1>
-      <button class="container group w-8 space-y-1.5" role="button">
-        <span class="h-0.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
-        <span class="h-0.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
-        <span class="h-0.5 rounded-full block bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
+      <button type="button" class="w-8 space-y-1.5 group" role="button">
+        <span class="block h-0.5 rounded-full bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
+        <span class="block h-0.5 rounded-full bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
+        <span class="block h-0.5 rounded-full bg-white group-hover:bg-yellow group-active:bg-activeyellow"></span>
       </button>
     </nav>
-    <main class="h-screen snap-y snap-mandatory overflow-scroll" role="main">
-      <section id="home" class="min-h-screen pt-50px px-2 flex items-center justify-center snap-start bg-lightblue">
-        <div class="container space-y-4 md:space-y-8 text-center ">
-          <div class="container">
-            <h2 class="font-playfair text-5xl text-darkblue md:text-8xl">Hi! I'm Scott</h2>
-            <h3 class="font-source text-xl text-orange md:text-4xl">I make things on the internet</h3>
+
+    <!-- Home section -->
+    <main class="h-screen overflow-scroll lg:snap-y lg:snap-mandatory" role="main">
+      <section id="home" class="flex justify-center items-center min-h-screen pt-nav px-4 bg-lightblue snap-start">
+        <div class="container space-y-4 md:space-y-8 text-center">
+          <div>
+            <h2 class="font-playfair text-5xl md:text-8xl text-darkblue">Hi! I'm Scott</h2>
+            <h3 class="font-source text-xl md:text-4xl text-orange">I make things on the internet</h3>
           </div>
-          <div class="container space-x-4 md:space-x-8">
-            <a href="mailto:hello@scottkennethjackson.co.uk?subject=Hello, Scott!" target="_blank" class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-regular fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" target="_blank" class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/scottkennethjackson" target="_blank" class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-brands fa-github"></i></a>
-            <a href="https://instagram.com/skjdotcodotuk" target="_blank" class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-brands fa-instagram"></i></a>
-            <a href="./docs/Scott Kenneth Jackson's CV.pdf" download class="text-xl text-darkblue hover:text-orange active:text-activeorange md:text-4xl" role="button"><i class="fa-regular fa-file-lines"></i></a>
+          <div class=" space-x-4 md:space-x-8">
+            <a href="mailto:hello@scottkennethjackson.co.uk?subject=Hello, Scott!" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" target="_blank" role="button"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" target="_blank" role="button"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/scottkennethjackson" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" target="_blank" role="button"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/skjdotcodotuk" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" target="_blank" role="button"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./docs/Scott Kenneth Jackson's CV.pdf" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" download role="button"><i class="fa-regular fa-file-lines"></i></a>
           </div>
         </div>
       </section>
 
-      <section id="about" class="min-h-screen pt-50px px-2 flex items-center justify-center snap-start bg-yellow">
-        <div class="container my-2 space-y-2 flex flex-col items-center lg:space-x-4 lg:space-y-0 lg:flex-row">
-          <img src="./images/illustration.png" alt="An illustration of Scott" id="illustration" class=" h-fit w-1/2 mx-auto border-2 border-black rounded-full justify-center lg:w-1/3">
+      <!-- About section -->
+      <section id="about" class="hidden flex justify-center items-center min-h-screen py-nav px-4 lg:pb-0 bg-yellow snap-start">
+        <div class="flex flex-col lg:flex-row items-center my-2 container space-y-2 lg:space-x-4 lg:space-y-0">
+          <img src="./images/illustration.png" id="illustration" class="mx-auto w-1/2 lg:w-1/3 h-fit border-2 rounded-full border-black" alt="A simple illustration of Scott">
           <div class="container space-y-2">
-            <div class="container text-xl">
+            <div class="text-xl">
               <h2 class="font-playfair">Hello, there!</h2>
               <h3 class="font-source">My name is Scott and I'm a Front-End Developer</h3>
             </div>
-            <div class="container space-y-4">
+            <div class="space-y-4">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis quam eget commodo consequat. Pellentesque id urna luctus, venenatis elit nec, sodales risus. Nunc ac euismod arcu. Suspendisse porta, nisi vitae dapibus lobortis, est leo cursus orci, vitae malesuada arcu sapien fermentum nibh. Curabitur dictum convallis est auctor venenatis. In lobortis neque velit, id tincidunt tortor viverra et. Fusce egestas mollis volutpat. Aliquam mollis viverra est, et tristique dolor tincidunt ut. Cras pretium nunc sed ligula iaculis iaculis. In molestie pulvinar ex non porttitor. Phasellus nec condimentum dui.</p>
               <p>Duis auctor malesuada ligula, cursus sollicitudin dolor imperdiet ac. Proin pretium leo vel arcu pretium, et ornare est feugiat. Phasellus nunc urna, porta id risus ac, finibus porttitor ipsum. Vivamus eleifend iaculis quam, vitae tristique massa accumsan vitae. Nullam felis tortor, euismod non velit in, laoreet interdum orci. Nunc ultrices luctus tempor. Sed pharetra semper sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec a est vitae elit vestibulum cursus. Nullam tincidunt libero a purus aliquam iaculis. Proin fringilla eros a scelerisque mollis. Donec vel erat urna. Aenean malesuada purus vel erat sagittis commodo. Nunc sagittis nisi sed dolor aliquet, vitae placerat nisi finibus. Donec viverra, nisl ac pharetra mollis, massa mi porttitor elit, congue viverra quam lorem sed erat.</p>
           </div>
@@ -64,41 +68,111 @@
         </div>
       </section>
 
-      <section id="skills" class="min-h-screen pt-50px px-2 flex items-center justify-center snap-start bg-offwhite">
-        <div class="container my-2 space-y-8">
-          <h2 class="font-playfair text-xl text-center">Here's What I Can Do</h2>
-          <div class="container space-y-4">
+      <!-- Skills section -->
+      <section id="skills" class="flex justify-center items-center min-h-screen py-nav px-4 lg:pb-0 bg-offwhite snap-start">
+        <div class="my-2 container space-y-2">
+          <h2 class="text-center font-playfair text-xl">Here's What I Can Do</h2>
+          <div class="space-y-4">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper lobortis fermentum. Nunc pulvinar felis placerat orci dictum, non faucibus risus eleifend. Nunc molestie volutpat diam, ut gravida lacus porttitor vel. Nunc quis mollis nulla. Integer aliquet, lectus eu varius feugiat, nisl nisl tincidunt sem, at condimentum mauris ante sed leo. Cras lacinia, massa quis ultricies ultrices, lectus sapien rhoncus ligula, vitae dictum nibh orci at nibh. Sed quis auctor sapien. Quisque at vestibulum sapien. Aliquam leo nulla, sollicitudin et felis quis, sodales facilisis odio. Phasellus luctus nulla vel turpis egestas, sit amet commodo quam dapibus. Duis id nisl a justo imperdiet sagittis quis quis felis. Pellentesque consectetur volutpat vehicula. Proin tortor turpis, bibendum in purus sit amet, venenatis porta mi. Praesent sollicitudin quam eget orci interdum, in semper neque laoreet. Suspendisse potenti.</p>
             <p>Curabitur justo velit, ullamcorper eu sagittis eget, facilisis nec felis. Sed bibendum gravida auctor. Maecenas sem quam, iaculis ac nunc eu, euismod molestie felis. Aliquam facilisis, orci a tempor rutrum, ex sapien elementum tellus, id efficitur nunc ante vulputate tellus. Suspendisse ac pulvinar neque. Vivamus risus sapien, semper nec fringilla sit amet, bibendum et nunc. Donec scelerisque arcu ac lectus auctor condimentum. Nullam at ante sed orci tincidunt condimentum sed sit amet quam. Donec nec posuere tortor. Curabitur bibendum velit sit amet tincidunt condimentum. In hac habitasse platea dictumst. Sed eu ultrices urna. Aenean pulvinar arcu mi, non sollicitudin nunc efficitur sit amet. Curabitur placerat lacus non rutrum auctor.</p>
             <p>Phasellus tempus consectetur dapibus. Vivamus at lorem nisi. Proin finibus, nisi quis egestas vulputate, neque urna ornare ex, eu sollicitudin elit mauris sed erat. Nullam maximus justo id fermentum ullamcorper. Integer imperdiet orci ac metus euismod pulvinar. Donec hendrerit sapien ac feugiat sagittis. Phasellus ut arcu lorem. In vitae dolor et tortor iaculis ornare rhoncus quis leo.</p>
           </div>
-          <div class="container flex flex-wrap justify-center space-x-2 md:space-x-4">
-            <img src="./images/technologies/html.png" alt="HTML" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/css.png" alt="CSS" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/javascript.png" alt="JavaScript" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/jquery.png" alt="jQuery" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/git.png" alt="Git" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/github.png" alt="GitHub" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/nodejs.png" alt="Node JS" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/npm.png" alt="NPM" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/react.png" alt="React" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/redux.png" alt="Redux" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/vue.png" alt="Vue" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/angular.png" alt="Angular" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/typescript.png" alt="TypeScript" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/tailwind.png" alt="Tailwind CSS" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/bootstrap.png" alt="Bootstrap" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/sass.png" alt="Sass" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/postgresql.png" alt="PostgreSQL" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/python.png" alt="Python" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/java.png" alt="Java" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/c-sharp.png" alt="C-sharp" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/php.png" alt="PHP" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/vs-code.png" alt="VS Code" class="h-4 mt-2 md:h-5">
-            <img src="./images/technologies/wordpress.png" alt="WordPress" class="h-4 mt-2 md:h-5">
+          <div class="flex flex-wrap justify-center space-x-2 md:space-x-4">
+            <img src="./images/technologies/html.png"class="mt-2 h-4 md:h-5" alt="HTML">
+            <img src="./images/technologies/css.png"class="mt-2 h-4 md:h-5" alt="CSS">
+            <img src="./images/technologies/javascript.png"class="mt-2 h-4 md:h-5" alt="JavaScript">
+            <img src="./images/technologies/jquery.png"class="mt-2 h-4 md:h-5" alt="jQuery">
+            <img src="./images/technologies/git.png"class="mt-2 h-4 md:h-5" alt="Git">
+            <img src="./images/technologies/github.png"class="mt-2 h-4 md:h-5" alt="GitHub">
+            <img src="./images/technologies/nodejs.png"class="mt-2 h-4 md:h-5" alt="Node JS">
+            <img src="./images/technologies/npm.png"class="mt-2 h-4 md:h-5" alt="NPM">
+            <img src="./images/technologies/react.png"class="mt-2 h-4 md:h-5" alt="React">
+            <img src="./images/technologies/redux.png"class="mt-2 h-4 md:h-5" alt="Redux">
+            <img src="./images/technologies/vue.png"class="mt-2 h-4 md:h-5" alt="Vue">
+            <img src="./images/technologies/angular.png"class="mt-2 h-4 md:h-5" alt="Angular">
+            <img src="./images/technologies/typescript.png"class="mt-2 h-4 md:h-5" alt="TypeScript">
+            <img src="./images/technologies/tailwind.png"class="mt-2 h-4 md:h-5" alt="Tailwind CSS">
+            <img src="./images/technologies/bootstrap.png"class="mt-2 h-4 md:h-5" alt="Bootstrap">
+            <img src="./images/technologies/sass.png"class="mt-2 h-4 md:h-5" alt="Sass">
+            <img src="./images/technologies/postgresql.png"class="mt-2 h-4 md:h-5" alt="PostgreSQL">
+            <img src="./images/technologies/python.png"class="mt-2 h-4 md:h-5" alt="Python">
+            <img src="./images/technologies/java.png"class="mt-2 h-4 md:h-5" alt="Java">
+            <img src="./images/technologies/c-sharp.png"class="mt-2 h-4 md:h-5" alt="C-sharp">
+            <img src="./images/technologies/php.png"class="mt-2 h-4 md:h-5" alt="PHP">
+            <img src="./images/technologies/vs-code.png"class="mt-2 h-4 md:h-5" alt="VS Code">
+            <img src="./images/technologies/wordpress.png"class="mt-2 h-4 md:h-5" alt="WordPress">
           </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+      <section id="portfolio" class="bg-orange dark:bg-gray-900 snap-start">
+        <div id="portfolio-carousel" class="relative w-full h-screen" data-carousel="static">
+          <!-- Carousel container -->
+          <div class="h-full overflow-hidden">
+              <!-- Project 1 -->
+              <div class="flex flex-col justify-center items-center mt-nav bg-orange px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
+                <a href="#" class="hover:translate-x-2 hover:-translate-y-2 mx-12 hover:shadow-simple" target="_blank" role="button">
+                  <img src="./images/projects/dm-tools.png" class="w-sm" alt="...">
+                </a>
+                <div class="flex flex-col container lg:w-md space-y-2">
+                  <h2 class="text-center font-playfair">Title</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta metus nisi, quis semper velit rutrum nec. Duis porta mauris a porttitor commodo. Vestibulum pellentesque eleifend enim a consectetur.</p>
+                  <p class="text-center font-code font-bold">HTML, CSS & JavaScript</p>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="flex flex-col justify-center items-center mt-nav bg-orange px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
+                <a href="#" class="hover:translate-x-2 hover:-translate-y-2 mx-12 hover:shadow-simple" target="_blank" role="button">
+                  <img src="./images/projects/beast-generator.png" class="w-sm" alt="...">
+                </a>
+                <div class="flex flex-col container lg:w-md space-y-2">
+                  <h2 class="text-center font-playfair">Title</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta metus nisi, quis semper velit rutrum nec. Duis porta mauris a porttitor commodo. Vestibulum pellentesque eleifend enim a consectetur.</p>
+                  <p class="text-center font-code font-bold">HTML, CSS & JavaScript</p>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="flex flex-col justify-center items-center mt-nav bg-orange px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
+                <a href="#" class="hover:translate-x-2 hover:-translate-y-2 mx-12 hover:shadow-simple" target="_blank" role="button">
+                  <img src="./images/projects/loot-generator.png" class="w-sm" alt="...">
+                </a>
+                <div class="flex flex-col container lg:w-md space-y-2">
+                  <h2 class="text-center font-playfair">Title</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta metus nisi, quis semper velit rutrum nec. Duis porta mauris a porttitor commodo. Vestibulum pellentesque eleifend enim a consectetur.</p>
+                  <p class="text-center font-code font-bold">HTML, CSS & JavaScript</p>
+                </div>
+              </div>
+          </div>
+          
+          <!-- Slider indicators -->
+          <div class="absolute -translate-x-1/2 bottom-4 left-1/2 z-30 space-x-3 invert">
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          </div>
+
+          <!-- Slider controls -->
+          <button type="button" class="absolute top-0 start-0 z-30 h-full pt-nav px-4 group" data-carousel-prev>
+            <svg class="h-8 text-black/50 dark:text-white/50 group-hover:text-black dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button type="button" class="absolute top-0 end-0 z-30 h-full pt-nav px-4 group" data-carousel-next>
+            <svg class="h-8 text-black/50 dark:text-white/50 group-hover:text-black dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+          </button>
         </div>
       </section>
     </main>
   </body>
+  <footer>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./scripts/carousel.js"></script>
+  </footer>
 </html>
