@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["**/*.{html,js}"],
+  content: ["**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       fontFamily: {
         'playfair': ['"Playfair Display"', 'Georgia', 'serif'],
-        'source': ['"Source Sans 3"', 'Arial', 'sans-serif']
+        'source': ['"Source Sans 3"', 'Arial', 'sans-serif'],
+        'code': ['"Courier New"', 'Courier', 'monospace']
       },
 
       colors: {
         transparent: 'transparent',
+        current: 'currentColor',
         'balck': '#000000',
         'white': '#ffffff',
         'offwhite': '#eef0ee',
@@ -23,10 +25,23 @@ module.exports = {
       },
 
       spacing: {
-        '50px': '50px'
+        'nav': '50px',
+        'xs': '480px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px'
       },
+
+      boxShadow: {
+        'simple': '-0.5rem 0.5rem rgba(0, 0, 0, 0.5)'
+      }
     },
   },
-  plugins: [],
+
+  darkMode: 'selector',
+
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 
