@@ -1429,6 +1429,10 @@ input:checked + .toggle-bg {
   width: 50%;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
 .w-3 {
   width: 0.75rem;
 }
@@ -1471,6 +1475,10 @@ input:checked + .toggle-bg {
 
 .w-1 {
   width: 0.25rem;
+}
+
+.w-lg {
+  width: 1024px;
 }
 
 .w-md {
@@ -2101,6 +2109,12 @@ input:checked + .toggle-bg {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -2653,6 +2667,11 @@ input:checked + .toggle-bg {
   background-color: rgb(180 221 213 / var(--tw-bg-opacity));
 }
 
+.bg-mediumblue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 55 86 / var(--tw-bg-opacity));
+}
+
 .bg-offwhite {
   --tw-bg-opacity: 1;
   background-color: rgb(238 240 238 / var(--tw-bg-opacity));
@@ -2948,6 +2967,11 @@ input:checked + .toggle-bg {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -3050,6 +3074,11 @@ input:checked + .toggle-bg {
   color: rgb(51 102 153 / .35);
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-black\/50 {
   color: rgb(0 0 0 / 0.5);
 }
@@ -3092,11 +3121,6 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3307,6 +3331,12 @@ input:checked + .toggle-bg {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-simple {
+  --tw-shadow: -0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  --tw-shadow-colored: -0.5rem 0.5rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3501,7 +3531,7 @@ input:checked + .toggle-bg {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
 }
 
 @media (min-width: 640px) {
@@ -3600,6 +3630,12 @@ input:checked + .toggle-bg {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:shadow-small:hover {
+  --tw-shadow: -0.25rem 0.25rem rgba(0, 0, 0, 0.5);
+  --tw-shadow-colored: -0.25rem 0.25rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -3645,6 +3681,11 @@ input:checked + .toggle-bg {
   text-align: center;
 }
 
+.active\:bg-activeyellow:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(222 177 16 / var(--tw-bg-opacity));
+}
+
 .active\:text-activeorange:active {
   --tw-text-opacity: 1;
   color: rgb(219 117 44 / var(--tw-text-opacity));
@@ -3674,6 +3715,10 @@ input:checked + .toggle-bg {
 @media (min-width: 768px) {
   .md\:h-5 {
     height: 1.25rem;
+  }
+
+  .md\:w-sm {
+    width: 640px;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -3710,6 +3755,10 @@ input:checked + .toggle-bg {
     width: 33.333333%;
   }
 
+  .lg\:w-lg {
+    width: 1024px;
+  }
+
   .lg\:w-md {
     width: 768px;
   }
@@ -3726,10 +3775,10 @@ input:checked + .toggle-bg {
     flex-direction: row;
   }
 
-  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
