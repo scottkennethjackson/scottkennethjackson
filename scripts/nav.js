@@ -6,13 +6,14 @@ const bar3 = document.getElementById('bar3');
 const dropdown = document.getElementById('dropdown');
 const sectionLink = document.querySelectorAll('.section-link');
 
-// When the user enters and leaves the menu-btn, add and remove the duration-700 class
+// When the user enters the menu-btn, add the duration-700 classes
 menuBtn.addEventListener('mouseenter', () => {
     bar1.classList.add('duration-700');
     bar2.classList.add('duration-700');
     bar3.classList.add('duration-700');
 });
 
+// When the user leaves the menu-btn, remove the duration-700 classes
 menuBtn.addEventListener('mouseleave', () => {
     bar1.classList.remove('duration-700');
     bar2.classList.remove('duration-700');
