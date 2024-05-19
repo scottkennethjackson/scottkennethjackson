@@ -22,6 +22,8 @@
     <link rel="manifest" href="./images/favicon.io/site.webmanifest">
 
     <script src="https://kit.fontawesome.com/b974d1263b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   </head>
   <body>
     <nav id="navbar">
@@ -71,15 +73,19 @@
       <!-- About section -->
       <section id="about" class="flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-yellow snap-start snap-always">
         <div class="flex flex-col lg:flex-row items-center my-2 container lg:w-lg space-y-2 lg:space-x-8 lg:space-y-0">
-          <img src="./images/illustration.png" id="illustration" class="mx-auto w-1/2 lg:w-1/3 h-fit border rounded-full border-black" alt="A simple illustration of Scott">
-          <div class="container space-y-2">
+          <div class="relative w-1/2 lg:w-md border rounded-full border-black">
+            <img src="./images/illustration.png" id="illustration" class="p-0 rounded-full" alt="A simple illustration of Scott">
+            <canvas id="canvas" class="hidden lg:block absolute top-0 rounded-full lg:hover:cursor-pen" width="424" height="417"></canvas>
+          </div>
+          <div class="w-full space-y-2">
             <div class="text-xl">
               <h2 class="font-playfair">Hello, there!</h2>
               <h3 class="font-source">My name is Scott and I'm a Front-End Developer</h3>
             </div>
             <div class="space-y-4">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis quam eget commodo consequat. Pellentesque id urna luctus, venenatis elit nec, sodales risus. Nunc ac euismod arcu. Suspendisse porta, nisi vitae dapibus lobortis, est leo cursus orci, vitae malesuada arcu sapien fermentum nibh. Curabitur dictum convallis est auctor venenatis. In lobortis neque velit, id tincidunt tortor viverra et. Fusce egestas mollis volutpat. Aliquam mollis viverra est, et tristique dolor tincidunt ut. Cras pretium nunc sed ligula iaculis iaculis. In molestie pulvinar ex non porttitor. Phasellus nec condimentum dui.</p>
-              <p>Duis auctor malesuada ligula, cursus sollicitudin dolor imperdiet ac. Proin pretium leo vel arcu pretium, et ornare est feugiat. Phasellus nunc urna, porta id risus ac, finibus porttitor ipsum. Vivamus eleifend iaculis quam, vitae tristique massa accumsan vitae. Nullam felis tortor, euismod non velit in, laoreet interdum orci. Nunc ultrices luctus tempor. Sed pharetra semper sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec a est vitae elit vestibulum cursus. Nullam tincidunt libero a purus aliquam iaculis. Proin fringilla eros a scelerisque mollis. Donec vel erat urna. Aenean malesuada purus vel erat sagittis commodo. Nunc sagittis nisi sed dolor aliquet, vitae placerat nisi finibus. Donec viverra, nisl ac pharetra mollis, massa mi porttitor elit, congue viverra quam lorem sed erat.</p>
+              <p>I’d been working in the beer industry for well over a decade by the time I was made redundant. It was during the pandemic and everywhere was closed, which made the situation much scarier. Yet as intimidating as it was, it was also an opportunity to reassess my career path, to step out of my comfort zone and try something new.</p>
+              <p>I retrained as a Software Engineer, balancing an online course with jobs at various breweries in and around Manchester. Eventually, I was offered my first coding job as a WordPress Developer at (appropriately) Sureshot Brewery, redesigning their website. Then, shortly after, I was offered my dream job.</p>
+              <p>Having studied Film & Media at university, I’d always fantasised about one day working at MediaCity. In September 2024, that fantasy became a reality when I was offered a place on the BBC’s Early Careers Apprenticeship scheme, working with [department]. And that’s where I am now, working as [role] with [team] and studying towards [qualification(s)] .</p>
           </div>
         </div>
         </div>
@@ -219,9 +225,10 @@
     </main>
   </body>
   <footer>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="./scripts/nav.js"></script>
+    <script src="./scripts/about.js"></script>
     <script src="./scripts/contact.js"></script>
   </footer>
 </html>

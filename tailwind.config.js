@@ -29,12 +29,17 @@ module.exports = {
         'xs': '480px',
         'sm': '640px',
         'md': '768px',
-        'lg': '1024px'
+        'lg': '1024px',
+        '544px': '544px'
       },
 
       boxShadow: {
         'simple': '-0.5rem 0.5rem rgba(0, 0, 0, 0.5)',
         'small': '-0.25rem 0.25rem rgba(0, 0, 0, 0.5)'
+      },
+
+      cursor: {
+        'pen': 'url(../images/pen.png), crosshair'
       }
     },
   },
