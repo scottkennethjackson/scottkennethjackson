@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./styles/output.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
@@ -54,7 +55,7 @@
 
     <!-- Home section -->
     <main class="h-dvh overflow-scroll lg:snap-y lg:snap-mandatory">
-      <section id="home" class="flex justify-center items-center min-h-dvh pt-nav px-4 bg-lightblue snap-start">
+      <section id="home" class="hidden flex justify-center items-center min-h-dvh pt-nav px-4 bg-lightblue snap-start">
         <div class="container space-y-4 md:space-y-8 text-center">
           <div>
             <h2 class="font-playfair text-5xl md:text-8xl text-darkblue">Hi! I'm Scott</h2>
@@ -71,7 +72,7 @@
       </section>
 
       <!-- About section -->
-      <section id="about" class="flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-yellow snap-start snap-always">
+      <section id="about" class="hidden flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-yellow snap-start snap-always">
         <div class="flex flex-col lg:flex-row items-center my-2 container lg:w-lg space-y-2 lg:space-x-8 lg:space-y-0">
           <div class="relative w-1/2 lg:w-md border rounded-full border-black">
             <img src="./images/illustration.png" id="illustration" class="p-0 rounded-full" alt="A simple illustration of Scott">
@@ -92,21 +93,23 @@
       </section>
 
       <!-- Skills section -->
-      <section id="skills" class="flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-offwhite snap-start snap-always">
-        <div class="my-2 container lg:w-lg space-y-2">
-          <h2 class="text-center font-playfair text-xl">Here's What I Can Do</h2>
-          <div class="space-y-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper lobortis fermentum. Nunc pulvinar felis placerat orci dictum, non faucibus risus eleifend. Nunc molestie volutpat diam, ut gravida lacus porttitor vel. Nunc quis mollis nulla. Integer aliquet, lectus eu varius feugiat, nisl nisl tincidunt sem, at condimentum mauris ante sed leo. Cras lacinia, massa quis ultricies ultrices, lectus sapien rhoncus ligula, vitae dictum nibh orci at nibh. Sed quis auctor sapien. Quisque at vestibulum sapien. Aliquam leo nulla, sollicitudin et felis quis, sodales facilisis odio. Phasellus luctus nulla vel turpis egestas, sit amet commodo quam dapibus. Duis id nisl a justo imperdiet sagittis quis quis felis. Pellentesque consectetur volutpat vehicula. Proin tortor turpis, bibendum in purus sit amet, venenatis porta mi. Praesent sollicitudin quam eget orci interdum, in semper neque laoreet. Suspendisse potenti.</p>
-            <p>Curabitur justo velit, ullamcorper eu sagittis eget, facilisis nec felis. Sed bibendum gravida auctor. Maecenas sem quam, iaculis ac nunc eu, euismod molestie felis. Aliquam facilisis, orci a tempor rutrum, ex sapien elementum tellus, id efficitur nunc ante vulputate tellus. Suspendisse ac pulvinar neque. Vivamus risus sapien, semper nec fringilla sit amet, bibendum et nunc. Donec scelerisque arcu ac lectus auctor condimentum. Nullam at ante sed orci tincidunt condimentum sed sit amet quam. Donec nec posuere tortor. Curabitur bibendum velit sit amet tincidunt condimentum. In hac habitasse platea dictumst. Sed eu ultrices urna. Aenean pulvinar arcu mi, non sollicitudin nunc efficitur sit amet. Curabitur placerat lacus non rutrum auctor.</p>
-            <p>Phasellus tempus consectetur dapibus. Vivamus at lorem nisi. Proin finibus, nisi quis egestas vulputate, neque urna ornare ex, eu sollicitudin elit mauris sed erat. Nullam maximus justo id fermentum ullamcorper. Integer imperdiet orci ac metus euismod pulvinar. Donec hendrerit sapien ac feugiat sagittis. Phasellus ut arcu lorem. In vitae dolor et tortor iaculis ornare rhoncus quis leo.</p>
+      <section id="skills" class="hidden flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-offwhite snap-start snap-always">
+        <div class="my-2 container lg:w-lg space-y-8">
+          <div class="space-y-2">
+            <h2 class="text-center font-playfair text-xl">Here's What I Can Do</h2>
+            <div class="space-y-4">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper lobortis fermentum. Nunc pulvinar felis placerat orci dictum, non faucibus risus eleifend. Nunc molestie volutpat diam, ut gravida lacus porttitor vel. Nunc quis mollis nulla. Integer aliquet, lectus eu varius feugiat, nisl nisl tincidunt sem, at condimentum mauris ante sed leo. Cras lacinia, massa quis ultricies ultrices, lectus sapien rhoncus ligula, vitae dictum nibh orci at nibh. Sed quis auctor sapien. Quisque at vestibulum sapien. Aliquam leo nulla, sollicitudin et felis quis, sodales facilisis odio. Phasellus luctus nulla vel turpis egestas, sit amet commodo quam dapibus. Duis id nisl a justo imperdiet sagittis quis quis felis. Pellentesque consectetur volutpat vehicula. Proin tortor turpis, bibendum in purus sit amet, venenatis porta mi. Praesent sollicitudin quam eget orci interdum, in semper neque laoreet. Suspendisse potenti.</p>
+              <p>Curabitur justo velit, ullamcorper eu sagittis eget, facilisis nec felis. Sed bibendum gravida auctor. Maecenas sem quam, iaculis ac nunc eu, euismod molestie felis. Aliquam facilisis, orci a tempor rutrum, ex sapien elementum tellus, id efficitur nunc ante vulputate tellus. Suspendisse ac pulvinar neque. Vivamus risus sapien, semper nec fringilla sit amet, bibendum et nunc. Donec scelerisque arcu ac lectus auctor condimentum. Nullam at ante sed orci tincidunt condimentum sed sit amet quam. Donec nec posuere tortor. Curabitur bibendum velit sit amet tincidunt condimentum. In hac habitasse platea dictumst. Sed eu ultrices urna. Aenean pulvinar arcu mi, non sollicitudin nunc efficitur sit amet. Curabitur placerat lacus non rutrum auctor.</p>
+              <p>Phasellus tempus consectetur dapibus. Vivamus at lorem nisi. Proin finibus, nisi quis egestas vulputate, neque urna ornare ex, eu sollicitudin elit mauris sed erat. Nullam maximus justo id fermentum ullamcorper. Integer imperdiet orci ac metus euismod pulvinar. Donec hendrerit sapien ac feugiat sagittis. Phasellus ut arcu lorem. In vitae dolor et tortor iaculis ornare rhoncus quis leo.</p>
+            </div>
           </div>
-          <div class="flex flex-wrap justify-center space-x-2 md:space-x-4">
+          <div class="flex flex-wrap justify-center space-x-2 lg:space-x-4">
             <img src="./images/technologies/html.png"class="mt-2 h-4 md:h-5" alt="HTML icon">
             <img src="./images/technologies/css.png"class="mt-2 h-4 md:h-5" alt="CSS icon">
             <img src="./images/technologies/javascript.png"class="mt-2 h-4 md:h-5" alt="JavaScript icon">
             <img src="./images/technologies/jquery.png"class="mt-2 h-4 md:h-5" alt="jQuery icon">
             <img src="./images/technologies/git.png"class="mt-2 h-4 md:h-5" alt="Git icon">
-            <img src="./images/technologies/github.png"class="mt-2 h-4 md:h-5" alt="GitHub icon">
+            <img src="./images/technologies/github.png"class="mt-2 h-4 md:h-5 dark:invert" alt="GitHub icon">
             <img src="./images/technologies/nodejs.png"class="mt-2 h-4 md:h-5" alt="Node JS icon">
             <img src="./images/technologies/npm.png"class="mt-2 h-4 md:h-5" alt="NPM icon">
             <img src="./images/technologies/react.png"class="mt-2 h-4 md:h-5" alt="React icon">
@@ -123,19 +126,19 @@
             <img src="./images/technologies/c-sharp.png"class="mt-2 h-4 md:h-5" alt="C-sharp icon">
             <img src="./images/technologies/php.png"class="mt-2 h-4 md:h-5" alt="PHP icon">
             <img src="./images/technologies/vs-code.png"class="mt-2 h-4 md:h-5" alt="VS Code icon">
-            <img src="./images/technologies/wordpress.png"class="mt-2 h-4 md:h-5" alt="WordPress icon">
+            <img src="./images/technologies/wordpress.png"class="mt-2 h-4 md:h-5 dark:invert" alt="WordPress icon">
           </div>
         </div>
       </section>
 
       <!-- Portfolio section -->
-      <section id="portfolio" class="bg-orange dark:bg-gray-900 snap-start snap-always">
+      <section id="portfolio" class=" hidden bg-orange dark:bg-gray-900 snap-start snap-always">
         <div id="portfolio-carousel" class="relative w-full h-dvh" data-carousel="static">
           <!-- Carousel -->
           <div class="relative h-full overflow-hidden">
               <!-- Project 1 -->
               <div class="flex flex-col justify-center items-center mt-nav bg-orange px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
-                <a href="#" class="hover:translate-x-2 hover:-translate-y-2 mx-12 hover:shadow-simple" target="_blank">
+                <a href="#" class="hover:translate-x-2 active:-translate-x-2 hover:-translate-y-2 active:translate-y-2 mx-12 hover:shadow-simple active:shadow-none" target="_blank">
                   <img src="./images/projects/dm-tools.png" class="w-sm" alt="...">
                 </a>
                 <div class="flex flex-col container lg:w-md space-y-2">
@@ -194,32 +197,34 @@
       </section>
 
       <!-- Contact section -->
-      <section id="contact" class="flex relative flex-col justify-center items-center min-h-dvh py-nav px-4 bg-mediumblue space-y-4 snap-start snap-always">
+      <section id="contact" class="flex flex-col justify-center items-center min-h-dvh py-nav px-4 bg-mediumblue space-y-4 snap-start snap-always">
         <div class="mb-2 text-center text-xl text-white">
           <h2 class="font-playfair">Give Me a Shout</h2>
           <h3 class="font-source">I'd love to hear from you</h3>
         </div>
-        <form action="" id="contact-form" class="needs-validation container md:w-sm border border-black shadow-simple bg-offwhite p-4 space-y-6" novalidate>
-          <div class="space-y-2">
-            <div class="flex flex-col">
-              <label for="name">Name</label>
-              <input type="text" id="name" required>
+        <div class="space-y-8">
+          <form action="index.php" method="post" enctype="multipart/form-data" id="contact-form" class="needs-validation relative container md:w-sm border border-black shadow-simple bg-offwhite p-4" novalidate>
+            <div class="space-y-4">
+              <div class="flex flex-col">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+              </div>
+              <div class="flex flex-col">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+              </div>
+              <div class="flex flex-col">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" class="resize-none" cols="" rows="4" required></textarea>
+              </div>
             </div>
-            <div class="flex flex-col">
-              <label for="email">Email</label>
-              <input type="email" id="email" required>
-            </div>
-            <div class="flex flex-col">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" class="resize-none" cols="30" rows="4" required></textarea>
-            </div>
-          </div>
+          </form>
           <div class="flex flex-col items-center">
             <p class="status-notification"></p>
-            <!-- Some button styling linked to mousedown EventListener in ./scripts/contact.js -->
+            <!-- Some button styling linked to EventListeners in ./scripts/contact.js -->
             <button type="submit" id="submit-btn" class="hover:translate-x-2 hover:-translate-y-2 hover:shadow-small bg-yellow active:bg-activeyellow w-20 border border-black p-2 uppercase font-bold text-black">Send</button>
           </div>
-        </form>
+        </div>
         <p class="absolute bottom-0 text-white text-xs">&copy2024 Scott Kenneth Jackson. All rights reserved.</p>
       </section>
     </main>
@@ -227,8 +232,8 @@
   <footer>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="./scripts/nav.js"></script>
-    <script src="./scripts/about.js"></script>
-    <script src="./scripts/contact.js"></script>
+    <script src="./scripts/js/nav.js"></script>
+    <script src="./scripts/js/about.js"></script>
+    <script src="./scripts/js/contact.js"></script>
   </footer>
 </html>
