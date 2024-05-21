@@ -1,4 +1,54 @@
 <?php
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    $errorEmpty = false;
+    $errorEmail = false;
+
+    if(empty($name) || empty($email) || empty($message)) {
+        echo '<span class="text-white">Plese fill in all fields</span>';
+        $errorEmpty = true;
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo '<span class="text-white">Plese enter a valid email address</span>';
+        $errorEmail = true;   
+    } else {
+        echo '<span class="text-white">Message sent! Thank you</span>';
+    };
+} else {
+    echo '<span class="text-white">Error! Please try again</span>';
+};
+
+?>
+
+<script>
+    $('#name', '#email', '#message').removeClass('border-red-500');
+
+    const errorEmpty = '<?php echo $errorEmpty; ?>';
+    const errorEmpty = '<?php echo $errorEmail; ?>';
+
+    if(errorEmpty) {
+        $('#name', '#email', '#message').addClass('border-red-500');
+        console.log('Hello World')
+    };
+
+    if(errorEmail) {
+        $('#email').addClass('border-red-500');
+    };
+
+    if (errorEmpty == false && errorEmail == false) {
+        $('#name', '#email', '#message').val('');
+    };
+</script>
+
+
+
+
+
+
+
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -24,7 +74,7 @@ try {
     $mail->Username   = 'scottkennethjackson@gmail.com';                     //SMTP username
     $mail->Password   = 'nAvmi2-maqpev-viffon';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom($email, $name);
