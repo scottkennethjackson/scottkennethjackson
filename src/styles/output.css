@@ -1254,6 +1254,14 @@ input:checked + .toggle-bg {
   height: 50px;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .min-h-dvh {
   min-height: 100dvh;
 }
