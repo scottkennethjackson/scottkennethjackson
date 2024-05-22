@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './src/index.html',
+    './src/**/*.{html,js}',
     './node_modules/flowbite/**/*.js'
   ],
   theme: {
@@ -43,7 +44,9 @@ module.exports = {
 
       boxShadow: {
         'simple': '-0.5rem 0.5rem rgba(0, 0, 0, 0.5)',
-        'small': '-0.25rem 0.25rem rgba(0, 0, 0, 0.5)'
+        'simple-invert': '-0.5rem 0.5rem rgba(255, 255, 255, 0.5)',
+        'small': '-0.25rem 0.25rem rgba(0, 0, 0, 0.5)',
+        'small-invert': '-0.25rem 0.25rem rgba(255, 255, 255, 0.5)'
       },
 
       cursor: {
