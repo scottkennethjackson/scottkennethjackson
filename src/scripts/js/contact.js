@@ -61,7 +61,7 @@ submitBtn.addEventListener('mouseleave', () => {
 
 // Send email and notify the user
 function sendEmail() {
-    statusNotification.innerHTML = 'Email sent! Thank you';
+    statusNotification.innerHTML = 'Message sent! Thank you';
     setTimeout(() => {
         statusNotification.innerHTML = '';
     }, 2000);
