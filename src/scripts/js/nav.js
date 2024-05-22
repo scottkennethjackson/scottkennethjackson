@@ -1,3 +1,4 @@
+const main = document.querySelector('main');
 const navbar = document.getElementById('navbar');
 const menuBtn = document.getElementById('menu-btn');
 const bar1 = document.getElementById('bar1');
@@ -6,6 +7,8 @@ const bar3 = document.getElementById('bar3');
 const dropdown = document.getElementById('dropdown');
 const navMenu = document.getElementById('nav-menu');
 const sectionLink = document.querySelectorAll('.section-link');
+const darkBtn = document.getElementById('dark-btn');
+const slider = document.getElementById('slider');
 const duration = 700;
 
 // When the user enters the menu-btn, add the duration-700 class
@@ -58,3 +61,9 @@ sectionLink.forEach(link => link.addEventListener('click', () => {
         navMenu.classList.add('hidden');
     }, duration);
 }));
+
+// When the user clicks the dark-btn, apply dark mode
+darkBtn.addEventListener('click', () => {
+    main.classList.toggle('dark');
+    slider.classList.toggle('-translate-x-8');
+});

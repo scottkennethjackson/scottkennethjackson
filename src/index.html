@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>-->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
   </head>
-  <body>
+  <body class="">
     <nav id="navbar">
       <!-- Main navbar -->
       <div class="flex fixed justify-between items-center z-50 w-screen h-nav shadow bg-gray-900 px-4" role="navigation">
@@ -50,36 +50,41 @@
           <li><a href="https://github.com/scottkennethjackson" class="hover:text-yellow active:text-activeyellow" target="_blank"><i class="fa-brands fa-github"></i><span class="md:hidden"> GitHub</span></a></li>
           <li><a href="https://instagram.com/skjdotcodotuk" class="hover:text-yellow active:text-activeyellow" target="_blank"><i class="fa-brands fa-instagram"></i><span class="md:hidden"> Instagram</span></a></li>
           <li><a href="./docs/Scott Kenneth Jackson's CV.pdf" class="hover:text-yellow active:text-activeyellow" download><span class="hidden md:inline-block"><i class="fa-regular fa-file-lines"></i></span><span class="md:hidden">Download CV</span></a></li>
+          <div id="dark-btn" class="flex relative justify-around mx-auto w-16 border-2 rounded-full" role="button">
+            <i class="fa-solid fa-sun-bright text-yellow"></i>
+            <i class="fa-solid fa-moon text-lightblue"></i>
+            <span id="slider" class="absolute right-0 w-7 h-full rounded-full bg-gray-300 duration-500"></span>
+          </div>
         </ul>
       </div>
     </nav>
 
     <!-- Home section -->
     <main class="h-dvh overflow-scroll lg:snap-y lg:snap-mandatory">
-      <section id="home" class="hidden flex justify-center items-center min-h-dvh pt-nav px-4 bg-lightblue snap-start">
+      <section id="home" class="flex justify-center items-center min-h-dvh pt-nav px-4 bg-lightblue dark:bg-gray-900 snap-start">
         <div class="container space-y-4 md:space-y-8 text-center">
           <div>
-            <h2 class="font-playfair text-5xl md:text-8xl text-darkblue">Hi! I'm Scott</h2>
+            <h2 class="font-playfair text-5xl md:text-8xl text-darkblue dark:text-white">Hi! I'm Scott</h2>
             <h3 class="font-source text-xl md:text-4xl text-orange">I make things on the internet</h3>
           </div>
           <div class="space-x-4 md:space-x-8">
-            <a href="mailto:hello@scottkennethjackson.co.uk?subject=Hello, Scott!" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/scottkennethjackson" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://instagram.com/skjdotcodotuk" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="./docs/Scott Kenneth Jackson's CV.pdf" class="text-xl md:text-4xl text-darkblue hover:text-orange active:text-activeorange" download><i class="fa-regular fa-file-lines"></i></a>
+            <a href="mailto:hello@scottkennethjackson.co.uk?subject=Hello, Scott!" class="text-xl md:text-4xl text-darkblue dark:text-white hover:text-orange active:text-activeorange" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/scott-kenneth-jackson/" class="text-xl md:text-4xl text-darkblue dark:text-white hover:text-orange active:text-activeorange" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/scottkennethjackson" class="text-xl md:text-4xl text-darkblue dark:text-white hover:text-orange active:text-activeorange" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/skjdotcodotuk" class="text-xl md:text-4xl text-darkblue dark:text-white hover:text-orange active:text-activeorange" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./docs/Scott Kenneth Jackson's CV.pdf" class="text-xl md:text-4xl text-darkblue dark:text-white hover:text-orange active:text-activeorange" download><i class="fa-regular fa-file-lines"></i></a>
           </div>
         </div>
       </section>
 
       <!-- About section -->
-      <section id="about" class="hidden flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-yellow snap-start snap-always">
+      <section id="about" class="flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-yellow dark:bg-gray-900 snap-start snap-always">
         <div class="flex flex-col lg:flex-row items-center my-2 container lg:w-lg space-y-2 lg:space-x-8 lg:space-y-0">
           <div class="relative w-1/2 lg:w-md border rounded-full border-black">
             <img src="./images/illustration.png" id="illustration" class="p-0 rounded-full" alt="A simple illustration of Scott">
             <canvas id="canvas" class="hidden lg:block absolute top-0 rounded-full lg:hover:cursor-pen" width="424" height="417"></canvas>
           </div>
-          <div class="w-full space-y-2">
+          <div class="w-full space-y-2 dark:text-white">
             <div class="text-xl">
               <h2 class="font-playfair">Hello, there!</h2>
               <h3 class="font-source">My name is Scott and I'm a Front-End Developer</h3>
@@ -94,9 +99,9 @@
       </section>
 
       <!-- Skills section -->
-      <section id="skills" class="hidden flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-offwhite snap-start snap-always">
+      <section id="skills" class="flex justify-center items-center min-h-dvh py-nav px-4 lg:pb-0 bg-offwhite dark:bg-gray-900 snap-start snap-always">
         <div class="my-2 container lg:w-lg space-y-8">
-          <div class="space-y-2">
+          <div class="space-y-2 dark:text-white">
             <h2 class="text-center font-playfair text-xl">Here's What I Can Do</h2>
             <div class="space-y-4">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper lobortis fermentum. Nunc pulvinar felis placerat orci dictum, non faucibus risus eleifend. Nunc molestie volutpat diam, ut gravida lacus porttitor vel. Nunc quis mollis nulla. Integer aliquet, lectus eu varius feugiat, nisl nisl tincidunt sem, at condimentum mauris ante sed leo. Cras lacinia, massa quis ultricies ultrices, lectus sapien rhoncus ligula, vitae dictum nibh orci at nibh. Sed quis auctor sapien. Quisque at vestibulum sapien. Aliquam leo nulla, sollicitudin et felis quis, sodales facilisis odio. Phasellus luctus nulla vel turpis egestas, sit amet commodo quam dapibus. Duis id nisl a justo imperdiet sagittis quis quis felis. Pellentesque consectetur volutpat vehicula. Proin tortor turpis, bibendum in purus sit amet, venenatis porta mi. Praesent sollicitudin quam eget orci interdum, in semper neque laoreet. Suspendisse potenti.</p>
@@ -105,25 +110,22 @@
             </div>
           </div>
           <div class="flex flex-wrap justify-center space-x-2 lg:space-x-4">
-            <img src="./images/technologies/css.png"class="mt-2 h-4 md:h-5" alt="CSS icon">
-            <img src="./images/technologies/css.png"class="mt-2 h-4 md:h-5" alt="CSS icon">
-            <img src="./images/technologies/css.png"class="mt-2 h-4 md:h-5" alt="CSS icon">
+            <img src="./images/technologies/html.png"class="mt-2 h-4 md:h-5" alt="HTML icon">
             <img src="./images/technologies/css.png"class="mt-2 h-4 md:h-5" alt="CSS icon">
             <img src="./images/technologies/javascript.png"class="mt-2 h-4 md:h-5" alt="JavaScript icon">
-            <img src="./images/technologies/html.png"class="mt-2 h-4 md:h-5" alt="HTML icon">
             <img src="./images/technologies/jquery.png"class="mt-2 h-4 md:h-5" alt="jQuery icon">
             <img src="./images/technologies/git.png"class="mt-2 h-4 md:h-5" alt="Git icon">
             <img src="./images/technologies/github.png"class="mt-2 h-4 md:h-5 dark:invert" alt="GitHub icon">
             <img src="./images/technologies/nodejs.png"class="mt-2 h-4 md:h-5" alt="Node JS icon">
             <img src="./images/technologies/npm.png"class="mt-2 h-4 md:h-5" alt="NPM icon">
             <img src="./images/technologies/react.png"class="mt-2 h-4 md:h-5" alt="React icon">
-            <img src="./images/technologies/redux.png"class="mt-2 h-4 md:h-5" alt="Redux icon">
             <img src="./images/technologies/vue.png"class="mt-2 h-4 md:h-5" alt="Vue icon">
             <img src="./images/technologies/angular.png"class="mt-2 h-4 md:h-5" alt="Angular icon">
             <img src="./images/technologies/typescript.png"class="mt-2 h-4 md:h-5" alt="TypeScript icon">
             <img src="./images/technologies/tailwind.png"class="mt-2 h-4 md:h-5" alt="Tailwind CSS icon">
             <img src="./images/technologies/bootstrap.png"class="mt-2 h-4 md:h-5" alt="Bootstrap icon">
             <img src="./images/technologies/sass.png"class="mt-2 h-4 md:h-5" alt="Sass icon">
+            <img src="./images/technologies/redux.png"class="mt-2 h-4 md:h-5" alt="Redux icon">
             <img src="./images/technologies/postgresql.png"class="mt-2 h-4 md:h-5" alt="PostgreSQL icon">
             <img src="./images/technologies/python.png"class="mt-2 h-4 md:h-5" alt="Python icon">
             <img src="./images/technologies/java.png"class="mt-2 h-4 md:h-5" alt="Java icon">
@@ -136,13 +138,13 @@
       </section>
 
       <!-- Portfolio section -->
-      <section id="portfolio" class="hidden bg-orange dark:bg-gray-900 snap-start snap-always">
+      <section id="portfolio" class="bg-orange dark:bg-gray-900 snap-start snap-always">
         <div id="portfolio-carousel" class="relative w-full h-dvh" data-carousel="static">
           <!-- Carousel -->
-          <div class="relative h-full overflow-hidden">
+          <div class="relative h-full overflow-hidden dark:text-white">
               <!-- Project 1 -->
-              <div class="flex flex-col justify-center items-center mt-nav bg-orange px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
-                <a href="#" class="hover:translate-x-2 active:-translate-x-2 hover:-translate-y-2 active:translate-y-2 mx-12 hover:shadow-simple active:shadow-none" target="_blank">
+              <div class="flex flex-col justify-center items-center mt-nav bg-orange dark:bg-gray-900 px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
+                <a href="#" class="hover:translate-x-2 active:-translate-x-2 hover:-translate-y-2 active:translate-y-2 mx-12 hover:shadow-simple dark:hover:shadow-simple-invert active:shadow-none" target="_blank">
                   <img src="./images/projects/dm-tools.png" class="w-sm" alt="...">
                 </a>
                 <div class="flex flex-col container lg:w-md space-y-2">
@@ -153,8 +155,8 @@
               </div>
 
               <!-- Project 2 -->
-              <div class="flex flex-col justify-center items-center mt-nav bg-orange px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
-                <a href="#" class="hover:translate-x-2 hover:-translate-y-2 mx-12 hover:shadow-simple" target="_blank">
+              <div class="flex flex-col justify-center items-center mt-nav bg-orange dark:bg-gray-900 px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
+                <a href="#" class="hover:translate-x-2 active:-translate-x-2 hover:-translate-y-2 active:translate-y-2 mx-12 hover:shadow-simple dark:hover:shadow-simple-invert active:shadow-none" target="_blank">
                   <img src="./images/projects/beast-generator.png" class="w-sm" alt="...">
                 </a>
                 <div class="flex flex-col container lg:w-md space-y-2">
@@ -165,8 +167,8 @@
               </div>
 
               <!-- Project 3 -->
-              <div class="flex flex-col justify-center items-center mt-nav bg-orange px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
-                <a href="#" class="hover:translate-x-2 hover:-translate-y-2 mx-12 hover:shadow-simple" target="_blank">
+              <div class="flex flex-col justify-center items-center mt-nav bg-orange dark:bg-gray-900 px-4 duration-700 ease-in-out space-y-4" data-carousel-item>
+                <a href="#" class="hover:translate-x-2 active:-translate-x-2 hover:-translate-y-2 active:translate-y-2 mx-12 hover:shadow-simple dark:hover:shadow-simple-invert active:shadow-none" target="_blank">
                   <img src="./images/projects/loot-generator.png" class="w-sm" alt="...">
                 </a>
                 <div class="flex flex-col container lg:w-md space-y-2">
@@ -201,14 +203,14 @@
       </section>
 
       <!-- Contact section -->
-      <section id="contact" class="relative flex flex-col justify-center items-center min-h-dvh py-nav px-4 bg-mediumblue space-y-4 snap-start snap-always">
+      <section id="contact" class="relative flex flex-col justify-center items-center min-h-dvh py-nav px-4 bg-mediumblue dark:bg-gray-900 space-y-4 snap-start snap-always">
         <div class="mb-2 text-center text-xl text-white">
           <h2 class="font-playfair">Give Me a Shout</h2>
           <h3 class="font-source">I'd love to hear from you</h3>
         </div>
-        <div class="space-y-8">
-          <form action="" method="" id="contact-form" class="needs-validation relative border border-black shadow-simple bg-offwhite p-4" novalidate>
-            <div class="container md:w-sm space-y-4">
+        <div class="w-full md:w-sm space-y-8">
+          <form action="" method="" id="contact-form" class="needs-validation relative border border-black shadow-simple dark:shadow-simple-invert bg-offwhite p-4" novalidate>
+            <div class="space-y-4">
               <div class="flex flex-col">
                 <label for="name" class="font-bold">Name</label>
                 <input type="text" name="name" id="name" class="rounded" required>
@@ -224,10 +226,10 @@
             </div>
           </form>
 
-          <div class="flex relative flex-col items-center space-y-2">
+          <div class="flex flex-col items-center space-y-2">
             <!-- Some button styling linked to EventListeners in ./scripts/contact.js -->
-            <button type="submit" id="submit-btn" class="hover:translate-x-2 hover:-translate-y-2 hover:shadow-small bg-yellow active:bg-activeyellow w-20 border border-black p-2 uppercase font-bold text-black">Send</button>
-            <p id="status-notification" class="absolute -bottom-8 text-white font-bold"></p>
+            <button type="submit" id="submit-btn" class="hover:translate-x-2 hover:-translate-y-2 hover:shadow-small dark:hover:shadow-small-invert bg-yellow active:bg-activeyellow w-20 border border-black p-2 uppercase font-bold text-black">Send</button>
+            <p id="status-notification" class="text-center text-white font-bold"></p>
           </div>
         </div>
         <p class="absolute bottom-0 text-white text-xs">&copy2024 Scott Kenneth Jackson. All rights reserved.</p>
