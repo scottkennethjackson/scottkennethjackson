@@ -129,3 +129,6 @@ dist
 
 # DS_Store
 .DS_Store
+
+# Passwords and access keys
+config.php
