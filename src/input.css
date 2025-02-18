@@ -2,6 +2,8 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-xs: 30rem;
+
   --color-lightblue: #b4ddd5;
   --color-orange: #F68330;
   --color-activeorange: #DB752C;
@@ -14,6 +16,6 @@
   --font-source: "Source Sans 3", sans-serif;
 }
 
-* {
-    /*border: 1px dotted red;
-}
+/* {
+    border: 1px dotted red;
+}*/
