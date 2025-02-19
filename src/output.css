@@ -530,6 +530,12 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
   .sticky {
     position: sticky;
   }
@@ -593,6 +599,13 @@
   .justify-center {
     justify-content: center;
   }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -607,6 +620,9 @@
   }
   .bg-orange {
     background-color: var(--color-orange);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-yellow {
     background-color: var(--color-yellow);
@@ -658,6 +674,10 @@
   }
   .italic {
     font-style: italic;
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-top {
     --tw-shadow: 0 -20px 25px 5px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
@@ -762,6 +782,9 @@
     }
   }
 }
+canvas {
+  cursor: url("./assets/img/pencil.png"), crosshair;
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -787,6 +810,11 @@
     transform: none;
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";

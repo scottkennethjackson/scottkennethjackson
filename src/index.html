@@ -12,9 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   </head>
   <body class="bg-black">
     <nav></nav>
@@ -97,11 +98,18 @@
         class="flex sticky top-0 justify-center items-center py-16 min-h-screen bg-yellow shadow-top"
       >
         <div class="container flex flex-col lg:flex-row items-center px-4">
-          <div class="mb-4 lg:mb-0 max-w-xs lg:max-w-none lg:w-full">
+          <div class="relative mb-4 lg:mb-0 max-w-xs lg:max-w-none lg:min-w-[480px]">
             <img 
-            src="./src/assets/img/illustration.png"
-            alt="An illustratration of Scott"
+            src="./assets/img/illustration.png"
+            alt="A simple illustratration of Scott"
+            class="bg-white rounded-full border-2 shadow-2xl"
           >
+            <canvas
+              id="doodlepad"
+              class="hidden lg:block absolute top-0 rounded-full"
+              width="480"
+              height="472"
+            ></canvas>
           </div>
 
           <div class="lg:ps-4">
@@ -132,6 +140,8 @@
       ></section>
     </main>
 -->
-    <footer class="flex sticky justify-center items-center min-h-auto bg-black shadow-top"></footer>
+    <footer class="flex sticky justify-center items-center min-h-auto bg-black shadow-top">
+      <script src="./scripts/about.js"></script>
+    </footer>
   </body>
 </html>
