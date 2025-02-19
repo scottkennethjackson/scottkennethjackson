@@ -382,9 +382,10 @@
     --color-yellow: #F7C412;
     --color-darkblue: #033756;
     --color-midnight: #08143A;
-    --color-offwhte: #08143A;
+    --color-offwhte: #EEF0EE;
     --font-playfair: "Playfair Display", serif;
     --font-source: "Source Sans 3", sans-serif;
+    --shadow-top: 0 -20px 25px 5px rgb(0 0 0 / 0.25);
   }
 }
 @layer base {
@@ -529,6 +530,21 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .static {
+    position: static;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .container {
     width: 100%;
     @media (width >= 30rem) {
@@ -553,11 +569,17 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
+  }
+  .min-h-auto {
+    min-height: auto;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -577,8 +599,23 @@
   .justify-center {
     justify-content: center;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-darkblue {
+    background-color: var(--color-darkblue);
+  }
   .bg-lightblue {
     background-color: var(--color-lightblue);
+  }
+  .bg-offwhte {
+    background-color: var(--color-offwhte);
+  }
+  .bg-orange {
+    background-color: var(--color-orange);
+  }
+  .bg-yellow {
+    background-color: var(--color-yellow);
   }
   .fill-midnight {
     fill: var(--color-midnight);
@@ -607,6 +644,13 @@
   .text-orange {
     color: var(--color-orange);
   }
+  .text-white {
+    color: var(--color-white);
+  }
+  .shadow-top {
+    --tw-shadow: 0 -20px 25px 5px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .hover\:fill-orange {
     &:hover {
       @media (hover: hover) {
@@ -614,19 +658,9 @@
       }
     }
   }
-  .active\:opacity-75 {
-    &:active {
-      opacity: 75%;
-    }
-  }
   .active\:opacity-80 {
     &:active {
       opacity: 80%;
-    }
-  }
-  .active\:opacity-90 {
-    &:active {
-      opacity: 90%;
     }
   }
   .xs\:text-4xl {
@@ -646,19 +680,9 @@
       margin-bottom: calc(var(--spacing) * 10);
     }
   }
-  .sm\:mb-12 {
-    @media (width >= 40rem) {
-      margin-bottom: calc(var(--spacing) * 12);
-    }
-  }
   .sm\:h-10 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 10);
-    }
-  }
-  .sm\:h-12 {
-    @media (width >= 40rem) {
-      height: calc(var(--spacing) * 12);
     }
   }
   .sm\:w-md {
@@ -730,4 +754,59 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
 }

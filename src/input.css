@@ -10,10 +10,12 @@
   --color-yellow: #F7C412;
   --color-darkblue: #033756;
   --color-midnight: #08143A;
-  --color-offwhte: #08143A;
+  --color-offwhte: #EEF0EE;
 
   --font-playfair: "Playfair Display", serif;
   --font-source: "Source Sans 3", sans-serif;
+
+  --shadow-top: 0 -20px 25px 5px rgb(0 0 0 / 0.25);
 }
 
 /* {
