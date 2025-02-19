@@ -18,6 +18,15 @@
   --shadow-top: 0 -20px 25px 5px rgb(0 0 0 / 0.25);
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 canvas {
   cursor: url("./assets/img/pencil.png"), crosshair;
 }

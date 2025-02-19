@@ -572,6 +572,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -761,14 +764,19 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
-  .lg\:w-full {
+  .lg\:block {
     @media (width >= 64rem) {
-      width: 100%;
+      display: block;
     }
   }
   .lg\:max-w-none {
     @media (width >= 64rem) {
       max-width: none;
+    }
+  }
+  .lg\:min-w-\[480px\] {
+    @media (width >= 64rem) {
+      min-width: 480px;
     }
   }
   .lg\:flex-row {
@@ -781,6 +789,13 @@
       padding-inline-start: calc(var(--spacing) * 4);
     }
   }
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 canvas {
   cursor: url("./assets/img/pencil.png"), crosshair;
