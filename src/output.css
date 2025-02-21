@@ -385,7 +385,7 @@
     --color-midnight: #08143A;
     --font-playfair: "Playfair Display", serif;
     --font-source: "Source Sans 3", sans-serif;
-    --shadow-top: 0 -20px 25px 5px rgb(0 0 0 / 0.25);
+    --shadow-top: 0 -10px 15px 3px rgb(0 0 0 / 0.25);
   }
 }
 @layer base {
@@ -542,6 +542,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-full {
+    top: 100%;
+  }
   .container {
     width: 100%;
     @media (width >= 30rem) {
@@ -683,7 +686,7 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-top {
-    --tw-shadow: 0 -20px 25px 5px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    --tw-shadow: 0 -10px 15px 3px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .hover\:fill-orange {
@@ -799,6 +802,11 @@ html {
 }
 canvas {
   cursor: url("./assets/img/pencil.png"), crosshair;
+}
+@supports (-moz-appearance:none) {
+  canvas {
+    display: none;
+  }
 }
 @keyframes spin {
   to {
