@@ -701,6 +701,9 @@
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
   .w-fit {
     width: fit-content;
   }
