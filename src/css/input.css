@@ -47,6 +47,7 @@
   --color-darkblue: #033756;
   --color-midnight: #08143a;
 
+  --font-code: "Courier New", Courier, monospace;
   --font-playfair: "Playfair Display", serif;
   --font-source: "Source Sans 3", sans-serif;
 
@@ -68,10 +69,14 @@ html {
   scrollbar-width: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 canvas {
   cursor: url("../assets/icons/pencil.png"), crosshair;
 }
 
 * {
-    /* border: 1px dotted red;
+    /*border: 1px dotted red;*/
 }
