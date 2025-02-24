@@ -220,8 +220,8 @@
       </section>
 
       <section
-        id="portfolio"
-        class="panel flex relative z-30 justify-center items-center px-4 py-16 min-h-screen bg-orange shadow-top"
+      id="portfolio"
+      class="panel flex relative z-30 justify-center items-center py-16 min-h-screen bg-orange shadow-top"
       >
         <div
           id="portfolio-carousel"
@@ -229,177 +229,148 @@
           data-carousel="static"
         >
           <!-- Carousel wrapper -->
-          <div>
-            <!-- Project #1 -->
-            <div
-              class="flex flex-col space-y-4 w-full h-fit bg-orange duration-700 ease-in-out -translate-y-1/2"
-              data-carousel-item
-            >
+          <div class="relative h-[640px]">
+            <!-- Slide 1 -->
+            <div class="flex flex-col justify-center bg-orange duration-700 ease-in-out" data-carousel-item>
               <a
                 href="#"
                 target="_blank"
-                class="hover:scale-101 mx-auto w-fit max-w-lg xl:max-w-xl"
+                class="mx-auto max-w-2xl hover:scale-101"
               >
                 <img
-                  src="./assets/images/placeholder1.png"
-                  alt="This is a placeholder image"
-                />
+                src="./assets/images/placeholder1.png"
+                alt="This is a placeholder image"
+                class="block w-full"
+                >
               </a>
-              <div
-                class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-2xl"
-              >
-                <a href="#" target="_blank">
-                  <h4
-                    class="font-playfair text-xl text-bold hover:underline active:opacity-80"
-                  >
-                    Project Title
-                  </h4>
+
+              <div class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="font-playfair text-xl text-bold hover:text-offwhte active:brightness-90"
+                >
+                  Project Title
                 </a>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus vel sollicitudin tellus. Cras ornare lorem eget
                   turpis tristique vehicula. Praesent at quam massa.
                 </p>
+
                 <p class="font-code font-black">HTML, CSS, JavaScript, etc.</p>
               </div>
             </div>
 
-            <!-- Project #2 -->
-            <div
-              class="flex flex-col space-y-4 w-full h-fit bg-orange duration-700 ease-in-out -translate-y-1/2"
-              data-carousel-item
-            >
+            <!-- Slide 2 -->
+            <div class="flex flex-col justify-center bg-orange duration-700 ease-in-out" data-carousel-item>
               <a
                 href="#"
                 target="_blank"
-                class="hover:scale-101 mx-auto w-fit max-w-lg xl:max-w-xl"
+                class="mx-auto max-w-2xl hover:scale-101"
               >
                 <img
-                  src="./assets/images/placeholder2.png"
-                  alt="This is a placeholder image"
-                />
+                src="./assets/images/placeholder2.png"
+                alt="This is a placeholder image"
+                class="block w-full"
+                >
               </a>
-              <div
-                class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-2xl"
-              >
-                <a href="#" target="_blank">
-                  <h4
-                    class="font-playfair text-xl text-bold hover:underline active:opacity-80"
-                  >
-                    Project Title
-                  </h4>
+
+              <div class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="font-playfair text-xl text-bold hover:text-offwhte active:brightness-90"
+                >
+                  Project Title
                 </a>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus vel sollicitudin tellus. Cras ornare lorem eget
                   turpis tristique vehicula. Praesent at quam massa.
                 </p>
+
                 <p class="font-code font-black">HTML, CSS, JavaScript, etc.</p>
               </div>
             </div>
 
-            <!-- Project #3 -->
-            <div
-              class="flex flex-col space-y-4 w-full h-fit bg-orange duration-700 ease-in-out -translate-y-1/2"
-              data-carousel-item
-            >
+            <!-- Slide 3 -->
+            <div class="flex flex-col justify-center bg-orange duration-700 ease-in-out" data-carousel-item>
               <a
                 href="#"
                 target="_blank"
-                class="hover:scale-101 mx-auto w-fit max-w-lg xl:max-w-xl"
+                class="mx-auto max-w-2xl hover:scale-101"
               >
                 <img
-                  src="./assets/images/placeholder3.png"
-                  alt="This is a placeholder image"
-                />
+                src="./assets/images/placeholder3.png"
+                alt="This is a placeholder image"
+                class="block w-full"
+                >
               </a>
-              <div
-                class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-2xl"
-              >
-                <a href="#" target="_blank">
-                  <h4
-                    class="font-playfair text-xl text-bold hover:underline active:opacity-80"
-                  >
-                    Project Title
-                  </h4>
+
+              <div class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="font-playfair text-xl text-bold hover:text-offwhte active:brightness-90"
+                >
+                  Project Title
                 </a>
+
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus vel sollicitudin tellus. Cras ornare lorem eget
-                  turpis tristique vehicula. Praesent at quam massa. This is a
-                  bigger project, so the description is longer than the others.
+                  turpis tristique vehicula. Praesent at quam massa.
                 </p>
+
                 <p class="font-code font-black">HTML, CSS, JavaScript, etc.</p>
               </div>
             </div>
           </div>
 
           <!-- Slider indicators -->
-          <div
-            class="flex absolute left-1/2 z-40 space-x-3 -translate-x-1/2 rtl:space-x-reverse"
-          >
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
+          <div class="flex absolute z-40 -translate-x-1/2 -bottom-4 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-4 h-4 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
           </div>
 
           <!-- Slider controls -->
-          <button
-            type="button"
-            class="pt-nav group hidden sm:block absolute top-0 start-0 z-40 h-full ps-4"
-            data-carousel-prev
-          >
-            <svg
-              role="graphics-symbol"
-              aria-hidden="true"
-              focusable="false"
-              class="h-8 fill-black/50 group-hover:fill-black"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-              />
-            </svg>
-            <span class="sr-only">Previous</span>
+            <button type="button" class="group hidden md:flex absolute top-0 start-0 z-40 justify-center items-center ps-4 h-full" data-carousel-prev>
+              <span class="inline-flex justify-center items-center">
+                <svg
+                  role="graphics-symbol"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="h-8 fill-black/50 group-hover:fill-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                  />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
           </button>
-
-          <button
-            type="button"
-            class="pt-nav group hidden sm:block absolute top-0 end-0 z-40 h-full pe-4"
-            data-carousel-next
-          >
-            <svg
-              role="graphics-symbol"
-              aria-hidden="true"
-              focusable="false"
-              class="h-8 fill-black/50 group-hover:fill-black"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-              />
-            </svg>
-            <span class="sr-only">Next</span>
+          <button type="button" class="group hidden md:flex absolute top-0 end-0 z-40 justify-center items-center pe-4 h-full" data-carousel-next>
+              <span class="inline-flex justify-center items-center">
+                <svg
+                  role="graphics-symbol"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="h-8 fill-black/50 group-hover:fill-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
           </button>
         </div>
       </section>
@@ -410,11 +381,11 @@
       >
         <div class="container flex flex-col items-center">
           <h2 class="font-playfair text-2xl font-bold text-white">
-            Lorem Ipsum
+            Give me a shout
           </h2>
 
           <h3 class="mb-4 font-source text-xl font-medium italic text-white">
-            Lorem ipsum dolor sit amet
+            I'd love to hear from you
           </h3>
         </div>
       </section>
