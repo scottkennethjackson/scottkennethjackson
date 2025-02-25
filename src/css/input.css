@@ -88,6 +88,7 @@
   --font-source: "Source Sans 3", sans-serif;
 
   --shadow-top: 0 -10px 15px 3px rgb(0 0 0 / 0.25);
+  --shadow-surround: 0 -10px 15px 3px rgb(0 0 0 / 0.25), 0 10px 15px 3px rgb(0 0 0 / 0.25);
 }
 
 @supports (-moz-appearance: none) {

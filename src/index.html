@@ -33,7 +33,7 @@
     <main>
       <section
         id="home"
-        class="flex sticky top-0 z-0 justify-center items-center min-h-screen bg-lightblue"
+        class="panel flex z-10 justify-center items-center min-h-screen bg-lightblue"
       >
         <div class="container flex flex-col items-center">
           <h2
@@ -121,7 +121,7 @@
 
       <section
         id="about"
-        class="panel flex relative z-10 justify-center items-center px-4 py-16 min-h-screen bg-yellow shadow-top"
+        class="panel flex relative z-20 justify-center items-center px-4 py-16 min-h-screen bg-yellow shadow-top"
       >
         <div class="container flex flex-col lg:flex-row items-center">
           <div
@@ -180,7 +180,7 @@
 
       <section
         id="experience"
-        class="panel flex relative z-20 justify-center items-center px-4 py-16 min-h-screen bg-offwhte shadow-top"
+        class="panel flex relative z-30 justify-center items-center px-4 py-16 min-h-screen bg-offwhte shadow-top"
       >
         <div class="container flex flex-col items-center">
           <h2 class="font-playfair text-2xl font-bold">Lorem Ipsum</h2>
@@ -221,7 +221,7 @@
 
       <section
         id="portfolio"
-        class="panel flex relative z-30 justify-center items-center py-16 min-h-screen bg-orange shadow-top"
+        class="panel flex relative z-40 justify-center items-center py-16 min-h-screen bg-orange shadow-top"
       >
         <div
           id="portfolio-carousel"
@@ -347,7 +347,7 @@
 
           <!-- Slider indicators -->
           <div
-            class="flex absolute z-40 -translate-x-1/2 -bottom-4 left-1/2 space-x-3 rtl:space-x-reverse"
+            class="flex absolute z-50 -translate-x-1/2 -bottom-4 left-1/2 space-x-3 rtl:space-x-reverse"
           >
             <button
               type="button"
@@ -375,7 +375,7 @@
           <!-- Slider controls -->
           <button
             type="button"
-            class="group hidden md:flex absolute top-0 start-0 z-40 justify-center items-center ps-4 h-full"
+            class="group hidden md:flex absolute top-0 start-0 z-50 justify-center items-center ps-4 h-full"
             data-carousel-prev
           >
             <span class="inline-flex justify-center items-center">
@@ -396,7 +396,7 @@
           </button>
           <button
             type="button"
-            class="group hidden md:flex absolute top-0 end-0 z-40 justify-center items-center pe-4 h-full"
+            class="group hidden md:flex absolute top-0 end-0 z-50 justify-center items-center pe-4 h-full"
             data-carousel-next
           >
             <span class="inline-flex justify-center items-center">
@@ -420,7 +420,7 @@
 
       <section
         id="contact"
-        class="panel flex relative z-50 justify-center items-center px-4 py-16 min-h-screen bg-darkblue shadow-top"
+        class="flex relative z-60 justify-center items-center px-4 py-16 min-h-screen bg-darkblue shadow-surround"
       >
         <div class="container flex flex-col items-center">
           <h2 class="font-playfair text-2xl font-bold text-white">
@@ -461,6 +461,7 @@
           </form>
         </div>
       </section>
+      <div class="flex relative h-96"></div>
     </main>
 
     <!-- Privacy Policy modal -->
@@ -587,8 +588,8 @@
       </div>
     </div>
 
-    <footer class="panel relative z-60 p-4 font-source text-white bg-black shadow-top">
-      <div class="container flex flex-col md:flex-row justify-between mx-auto">
+    <footer class="flex fixed top-0 z-0 size-full items-end p-4 font-source text-white bg-black">
+      <div class="container flex flex-col md:flex-row justify-between mx-auto h-fit">
         <ul class="text-center md:text-start">
           <li>
             <a
