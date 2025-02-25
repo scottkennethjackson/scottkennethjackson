@@ -220,8 +220,8 @@
       </section>
 
       <section
-      id="portfolio"
-      class="panel flex relative z-30 justify-center items-center py-16 min-h-screen bg-orange shadow-top"
+        id="portfolio"
+        class="panel flex relative z-30 justify-center items-center py-16 min-h-screen bg-orange shadow-top"
       >
         <div
           id="portfolio-carousel"
@@ -231,20 +231,25 @@
           <!-- Carousel wrapper -->
           <div class="relative h-[640px]">
             <!-- Slide 1 -->
-            <div class="flex flex-col justify-center bg-orange duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="flex flex-col justify-center bg-orange duration-700 ease-in-out"
+              data-carousel-item
+            >
               <a
                 href="#"
                 target="_blank"
                 class="mx-auto max-w-2xl hover:scale-101"
               >
                 <img
-                src="./assets/images/placeholder1.png"
-                alt="This is a placeholder image"
-                class="block w-full"
-                >
+                  src="./assets/images/placeholder1.png"
+                  alt="This is a placeholder image"
+                  class="block w-full"
+                />
               </a>
 
-              <div class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl">
+              <div
+                class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl"
+              >
                 <a
                   href="#"
                   target="_blank"
@@ -264,20 +269,25 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="flex flex-col justify-center bg-orange duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="flex flex-col justify-center bg-orange duration-700 ease-in-out"
+              data-carousel-item
+            >
               <a
                 href="#"
                 target="_blank"
                 class="mx-auto max-w-2xl hover:scale-101"
               >
                 <img
-                src="./assets/images/placeholder2.png"
-                alt="This is a placeholder image"
-                class="block w-full"
-                >
+                  src="./assets/images/placeholder2.png"
+                  alt="This is a placeholder image"
+                  class="block w-full"
+                />
               </a>
 
-              <div class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl">
+              <div
+                class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl"
+              >
                 <a
                   href="#"
                   target="_blank"
@@ -297,20 +307,25 @@
             </div>
 
             <!-- Slide 3 -->
-            <div class="flex flex-col justify-center bg-orange duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="flex flex-col justify-center bg-orange duration-700 ease-in-out"
+              data-carousel-item
+            >
               <a
                 href="#"
                 target="_blank"
                 class="mx-auto max-w-2xl hover:scale-101"
               >
                 <img
-                src="./assets/images/placeholder3.png"
-                alt="This is a placeholder image"
-                class="block w-full"
-                >
+                  src="./assets/images/placeholder3.png"
+                  alt="This is a placeholder image"
+                  class="block w-full"
+                />
               </a>
 
-              <div class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl">
+              <div
+                class="flex flex-col items-center mx-auto space-y-4 px-4 max-w-3xl"
+              >
                 <a
                   href="#"
                   target="_blank"
@@ -331,46 +346,74 @@
           </div>
 
           <!-- Slider indicators -->
-          <div class="flex absolute z-40 -translate-x-1/2 -bottom-4 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" class="w-4 h-4 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-4 h-4 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <div
+            class="flex absolute z-40 -translate-x-1/2 -bottom-4 left-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-4 h-4 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-4 h-4 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-4 h-4 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
           </div>
 
           <!-- Slider controls -->
-            <button type="button" class="group hidden md:flex absolute top-0 start-0 z-40 justify-center items-center ps-4 h-full" data-carousel-prev>
-              <span class="inline-flex justify-center items-center">
-                <svg
-                  role="graphics-symbol"
-                  aria-hidden="true"
-                  focusable="false"
-                  class="h-8 fill-black/50 group-hover:fill-black"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-                  />
-                </svg>
-                <span class="sr-only">Previous</span>
-              </span>
+          <button
+            type="button"
+            class="group hidden md:flex absolute top-0 start-0 z-40 justify-center items-center ps-4 h-full"
+            data-carousel-prev
+          >
+            <span class="inline-flex justify-center items-center">
+              <svg
+                role="graphics-symbol"
+                aria-hidden="true"
+                focusable="false"
+                class="h-8 fill-black/50 group-hover:fill-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
           </button>
-          <button type="button" class="group hidden md:flex absolute top-0 end-0 z-40 justify-center items-center pe-4 h-full" data-carousel-next>
-              <span class="inline-flex justify-center items-center">
-                <svg
-                  role="graphics-symbol"
-                  aria-hidden="true"
-                  focusable="false"
-                  class="h-8 fill-black/50 group-hover:fill-black"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                  />
-                </svg>
-                <span class="sr-only">Next</span>
-              </span>
+          <button
+            type="button"
+            class="group hidden md:flex absolute top-0 end-0 z-40 justify-center items-center pe-4 h-full"
+            data-carousel-next
+          >
+            <span class="inline-flex justify-center items-center">
+              <svg
+                role="graphics-symbol"
+                aria-hidden="true"
+                focusable="false"
+                class="h-8 fill-black/50 group-hover:fill-black"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
           </button>
         </div>
       </section>
@@ -387,19 +430,301 @@
           <h3 class="mb-4 font-source text-xl font-medium italic text-white">
             I'd love to hear from you
           </h3>
+
+          <form action="#" class="rounded-lg p-4 space-y-4 bg-offwhte">
+            <div class="space-y-1">
+              <label for="name" class="block font-medium"> Name </label>
+              <input
+                type="text"
+                id="name"
+                class="shadow-sm bg-white border rounded-sm p-1 focus:border-red-400"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email"> Email </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                class="resize-none"
+                required
+              ></textarea>
+            </div>
+          </form>
         </div>
       </section>
     </main>
 
-    <footer
-      class="flex sticky justify-center items-center h-0 bg-black shadow-top"
+    <!-- Privacy Policy modal -->
+    <div
+      id="privacy-policy"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden fixed top-0 z-90 px-4 py-12 size-full bg-white/25"
+      data-modal-backdrop="static"
     >
+      <div class="flex justify-center items-center size-full">
+        <!-- Modal content -->
+        <div
+          class="flex flex-col rounded-xl shadow-md max-w-xl max-h-full bg-white"
+        >
+          <!-- Modal header -->
+          <div
+            class="flex justify-between items-center border-b border-gray-400 p-4"
+          >
+            <h2 class="font-playfair text-2xl font-bold">Privacy Policy</h2>
+            <button type="button" data-modal-hide="privacy-policy">
+              <svg
+                role="graphics-symbol"
+                aria-hidden="true"
+                focusable="false"
+                class="h-6 hover:fill-yellow active:brightness-90"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+              <span class="sr-only">Close</span>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="overflow-y-scroll space-y-4 p-4 bg-pink">
+            <p class="font-bold">
+              <span class="font-playfair italic">Effective date:</span> February
+              2025
+            </p>
+            <p>
+              This Site is a personal portfolio page and does not collect,
+              store, or process any personal data from visitors.
+            </p>
+            <div>
+              <h3 class="font-playfair text-xl italic font-medium">
+                Information We Do Not Collect
+              </h3>
+              <ul class="ps-4 list-disc">
+                <li>We do not use cookies or tracking technologies.</li>
+                <li>
+                  We do not collect personal information through contact forms,
+                  comments, or any other means.
+                </li>
+                <li>
+                  We do not use analytics tools, advertisements, or third-party
+                  trackers.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-playfair text-xl italic font-medium">
+                Third-Party Services
+              </h3>
+              <p class="mb-4">
+                This Site is hosted by
+                <a
+                  href="https://www.ionos.co.uk/"
+                  target="_blank"
+                  class="font-bold hover:text-orange active:brightness-90 underline"
+                  >IONOS</a
+                >, which may collect technical data such as visitor IP addresses,
+                browser type, and access times for security and maintenance
+                purposes. Please refer to
+                <a
+                  href="https://www.ionos.com/terms-gtc/privacy-policy/"
+                  target="_blank"
+                  class="hover:text-orange active:brightness-90 underline"
+                >
+                  IONOS's Privacy Policy</a
+                >
+                for more details.
+              </p>
+              <p>
+                Additionally, this Site contains links to third-party platforms,
+                including hosting platforms (such as
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="font-bold hover:text-orange active:brightness-90 underline"
+                  >GitHub</a
+                >
+                and
+                <a
+                  href="https://vercel.com/"
+                  target="_blank"
+                  class="font-bold hover:text-orange active:brightness-90 underline"
+                  >Vercel</a
+                >) and social media sites. Clicking these links may direct you to
+                external websites that have their own privacy policies and data
+                collection practices. Please review their respective policies for
+                more information.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-playfair text-xl italic font-medium">
+                Changes to This Policy
+              </h3>
+              <p>
+                If this Privacy Policy changes in the future, updates will be
+                posted on this page. If you have any questions, please
+                <a
+                  href="mailto:scottkennethjackson@gmail.com?subject=Your Privacy Policy"
+                  target="_blank"
+                  class="hover:text-orange active:brightness-90 underline"
+                  >contact the site administrator</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="panel relative z-60 p-4 font-source text-white bg-black shadow-top">
+      <div class="container flex flex-col md:flex-row justify-between mx-auto">
+        <ul class="text-center md:text-start">
+          <li>
+            <a
+              href="#"
+              class="font-bold hover:text-yellow active:brightness-90 underline uppercase"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="about"
+              class="font-bold hover:text-yellow active:brightness-90 underline uppercase"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="font-bold hover:text-yellow active:brightness-90 underline uppercase"
+            >
+              Experience
+            </a>
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="font-bold hover:text-yellow active:brightness-90 underline uppercase"
+            >
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="font-bold hover:text-yellow active:brightness-90 underline uppercase"
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="font-bold hover:text-yellow active:brightness-90 underline uppercase"
+            >
+              Download CV
+            </button>
+          </li>
+        </ul>
+
+        <hr class="md:hidden my-4">
+
+        <div class="flex flex-col justify-between md:items-end">
+          <div class="flex flex-row-reverse md:flex-col justify-between items-start md:items-end mb-8 md:h-2/3">
+            <div class="flex space-x-8">
+              <a href="https://www.instagram.com/skjdotcodotuk/" target="_blank">
+                <svg
+                  role="graphics-symbol"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="h-10 fill-white hover:fill-yellow active:brightness-90"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+                <span class="sr-only">View Instagram Profile</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/scott-kenneth-jackson/"
+                target="_blank"
+              >
+                <svg
+                  role="graphics-symbol"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="h-10 fill-white hover:fill-yellow active:brightness-90"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  />
+                </svg>
+                <span class="sr-only">View LinkedIn Profile</span>
+              </a>
+
+              <a href="https://github.com/scottkennethjackson" target="_blank">
+                <svg
+                  role="graphics-symbol"
+                  aria-hidden="true"
+                  focusable="false"
+                  class="h-10 fill-white hover:fill-yellow active:brightness-90"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 496 512"
+                >
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                  />
+                </svg>
+                <span class="sr-only">View GitHub Profile</span>
+              </a>
+            </div>
+            <button
+              type="button"
+              data-modal-target="privacy-policy"
+              data-modal-show="privacy-policy"
+              class="font-playfair text-lg italic font-medium hover:text-yellow active:brightness-90 underline"
+            >
+              Privacy Policy
+            </button>
+          </div>
+          <p>
+            &copy; <span id="year"></span> Scott Kenneth Jackson &mdash;
+            Designed and built by SKJ, illustration by
+            <a
+              href="#"
+              target="_blank"
+              class="hover:text-yellow active:brightness-90 underline"
+            >
+              Esmé Alice Mackey
+            </a>
+          </p>
+        </div>
+      </div>
       <script src="./js/libs/gsap.min.js"></script>
       <script src="./js/libs/ScrollTrigger.min.js"></script>
       <script src="./js/libs/flowbite.min.js"></script>
       <script src="./js/libs/jquery-3.7.1.min.js"></script>
       <script src="./js/scroll.js"></script>
       <script src="./js/canvas.js"></script>
+      <script src="./js/footer.js"></script>
     </footer>
   </body>
 </html>
