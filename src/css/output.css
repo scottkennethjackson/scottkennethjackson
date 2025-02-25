@@ -1239,6 +1239,11 @@
       display: none;
     }
   }
+  .sm\:h-8 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 8);
+    }
+  }
   .sm\:h-10 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 10);
@@ -1308,6 +1313,11 @@
   .md\:h-2\/3 {
     @media (width >= 48rem) {
       height: calc(2/3 * 100%);
+    }
+  }
+  .md\:h-10 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 10);
     }
   }
   .md\:h-12 {
