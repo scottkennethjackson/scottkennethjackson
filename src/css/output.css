@@ -1331,6 +1331,11 @@
       text-align: center;
     }
   }
+  .md\:text-end {
+    @media (width >= 48rem) {
+      text-align: end;
+    }
+  }
   .md\:text-start {
     @media (width >= 48rem) {
       text-align: start;
