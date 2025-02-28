@@ -106,17 +106,12 @@ messageInput.addEventListener('input', () => {
 function resetForm() {
     nameInput.value = '';
     nameInput.classList.remove(...successClasses);
-    namePass = false;
 
     emailInput.value = '';
     emailInput.classList.remove(...successClasses);
-    emailPass = false;
 
     messageInput.value = '';
     messageInput.classList.remove(...successClasses);
-    messagePass = false;
-
-    formPass = false;
 };
 
 submitBtn.addEventListener('click', () => {
@@ -125,6 +120,10 @@ submitBtn.addEventListener('click', () => {
         sentNotification.classList.remove(invisibility);
         submitBtn.classList.add(...inactiveClasses);
         submitBtn.classList.remove(...activeClasses);
+        namePass = false;
+        emailPass = false;
+        messagePass = false;
+        formPass = false;
     };
 
     setTimeout(() => {
