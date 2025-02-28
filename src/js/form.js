@@ -15,7 +15,7 @@ let formPass = false;
 
 successClasses = ['bg-green-50', 'border-green-500', 'text-green-900'];
 errorClasses = ['bg-red-50', 'border-red-500', 'text-red-900'];
-activeClasses = ['hover:scale-101', 'active:scale-99'];
+activeClasses = ['hover:scale-101', 'active:scale-99', 'active:brightness-90'];
 inactiveClasses = ['grayscale', '!cursor-not-allowed'];
 invisibility = 'invisible';
 sendAnimation = 'animate__backOutRight';
