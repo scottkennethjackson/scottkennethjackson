@@ -5,7 +5,7 @@ const emailInput = document.getElementById('email');
 const emailStatus = document.getElementById('email-status');
 const messageInput = document.getElementById('message');
 const messageStatus = document.getElementById('message-status');
-const statusNotification = document.getElementById('status-notification');
+const sentNotification = document.getElementById('sent-notification');
 const submitBtn = document.getElementById('submit-btn');
 
 let namePass = false;
@@ -15,12 +15,15 @@ let formPass = false;
 
 successClasses = ['bg-green-50', 'border-green-500', 'text-green-900'];
 errorClasses = ['bg-red-50', 'border-red-500', 'text-red-900'];
-activeClasses = [];
-inactiveClasses = ['grayscale'];
-sendAnimation = ['animate__animated animate__backOutRight'];
-replaceAnimation = ['animate__animated animate__backInLeft'];
+activeClasses = ['hover:scale-101', 'active:scale-99'];
+inactiveClasses = ['grayscale', '!cursor-not-allowed'];
+invisibility = 'invisible';
+sendAnimation = 'animate__backOutRight';
+replaceAnimation = 'animate__backInLeft';
 
 function checkForm() {
+    sentNotification.classList.add(invisibility);
+
     if (namePass && emailPass && messagePass) {
         submitBtn.classList.remove(...inactiveClasses);
         submitBtn.classList.add(...activeClasses);
@@ -29,7 +32,7 @@ function checkForm() {
         submitBtn.classList.remove(...activeClasses);
         submitBtn.classList.add(...inactiveClasses);
         formPass = false;
-    }
+    };
 
     return formPass;
 };
@@ -38,18 +41,18 @@ nameInput.addEventListener('input', () => {
     if (nameInput.value.trim() == '') {
         nameInput.classList.remove(...successClasses);
         nameInput.classList.add(...errorClasses);
-        nameStatus.classList.remove('invisible');
+        nameStatus.classList.remove(invisibility);
         namePass = false;
 
         checkForm();
     } else {
         nameInput.classList.remove(...errorClasses);
         nameInput.classList.add(...successClasses);
-        nameStatus.classList.add('invisible');
+        nameStatus.classList.add(invisibility);
         namePass = true;
 
         checkForm();
-    }
+    };
 });
 
 function validateEmail() {
@@ -68,41 +71,68 @@ emailInput.addEventListener('input', () => {
     if (emailInput.value.trim() == '' || validateEmail() == false) {
         emailInput.classList.remove(...successClasses);
         emailInput.classList.add(...errorClasses);
-        emailStatus.classList.remove('invisible');
+        emailStatus.classList.remove(invisibility);
         emailPass = false;
 
         checkForm();
     } else {
         emailInput.classList.remove(...errorClasses);
         emailInput.classList.add(...successClasses);
-        emailStatus.classList.add('invisible');
+        emailStatus.classList.add(invisibility);
         emailPass = true;
 
         checkForm();
-    }
+    };
 });
 
 messageInput.addEventListener('input', () => {
     if (messageInput.value.trim() == '' || messageInput.value.length < 6) {
         messageInput.classList.remove(...successClasses);
         messageInput.classList.add(...errorClasses);
-        messageStatus.classList.remove('invisible');
+        messageStatus.classList.remove(invisibility);
         messagePass = false;
 
         checkForm();
     } else {
         messageInput.classList.remove(...errorClasses);
         messageInput.classList.add(...successClasses);
-        messageStatus.classList.add('invisible');
+        messageStatus.classList.add(invisibility);
         messagePass = true;
 
         checkForm();
-    }
+    };
 });
 
+function resetForm() {
+    nameInput.value = '';
+    nameInput.classList.remove(...successClasses);
+    namePass = false;
+
+    emailInput.value = '';
+    emailInput.classList.remove(...successClasses);
+    emailPass = false;
+
+    messageInput.value = '';
+    messageInput.classList.remove(...successClasses);
+    messagePass = false;
+
+    formPass = false;
+};
+
 submitBtn.addEventListener('click', () => {
-    console.log(formPass)
     if (formPass) {
-        submitBtn.classList.add(...sendAnimation);
+        contactForm.classList.add(sendAnimation);
+        sentNotification.classList.remove(invisibility);
+        submitBtn.classList.add(...inactiveClasses);
+        submitBtn.classList.remove(...activeClasses);
     };
+
+    setTimeout(() => {
+        resetForm();
+    }, 500);
+
+    setTimeout(() => {
+        contactForm.classList.remove(sendAnimation);
+        contactForm.classList.add(replaceAnimation);
+    }, 1000);
 });
