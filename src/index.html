@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="scroll-smooth"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,7 +32,7 @@
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body class="overflow-x-hidden bg-black">
-    <header class="fixed z-90 py-2 px-4 w-full bg-black shadow-lg">
+    <header class="fixed z-90 py-2 px-4 w-full bg-black shadow-xl">
       <h1 class="font-playfair text-xl sm:text-2xl font-black text-white">
         Scott Kenneth Jackson
       </h1>
@@ -38,7 +41,7 @@
     <main>
       <section
         id="home"
-        class="panel flex z-10 justify-center items-center pt-16 px-4 min-h-screen bg-lightblue"
+        class="panel flex z-10 justify-center items-center pt-16 px-4 min-h-screen bg-lightblue snap-start"
       >
         <div class="container flex flex-col items-center">
           <h2
@@ -128,7 +131,7 @@
 
       <section
         id="about"
-        class="panel flex relative z-20 justify-center items-center px-4 py-16 min-h-screen bg-yellow shadow-top"
+        class="panel flex relative z-20 justify-center items-center px-4 py-16 min-h-screen bg-yellow shadow-top snap-start"
       >
         <div class="container flex flex-col lg:flex-row items-center">
           <div
@@ -137,7 +140,7 @@
             <img
               src="./assets/images/illustration.png"
               alt="A simple illustratration of Scott"
-              class="bg-white rounded-full border-2 shadow-2xl"
+              class="bg-white rounded-full border-2 shadow-lg"
             />
             <canvas
               id="doodlepad"
@@ -187,7 +190,7 @@
 
       <section
         id="experience"
-        class="panel flex relative z-30 justify-center items-center px-4 py-16 min-h-screen bg-offwhite shadow-top"
+        class="panel flex relative z-30 justify-center items-center px-4 py-16 min-h-screen bg-offwhite shadow-top snap-start"
       >
         <div class="container flex flex-col items-center">
           <h2 class="font-playfair text-2xl font-bold">Lorem Ipsum</h2>
@@ -228,7 +231,7 @@
 
       <section
         id="portfolio"
-        class="panel flex relative z-40 justify-center items-center py-16 min-h-screen bg-orange shadow-top"
+        class="panel flex relative z-40 justify-center items-center py-16 min-h-screen bg-orange shadow-top snap-start"
       >
         <div
           id="portfolio-carousel"
@@ -427,7 +430,7 @@
 
       <section
         id="contact"
-        class="panel flex relative z-60 justify-center items-center px-4 py-16 min-h-screen bg-darkblue shadow-surround"
+        class="panel flex relative z-60 justify-center items-center px-4 py-16 min-h-screen bg-darkblue shadow-surround snap-start"
       >
         <div class="container flex flex-col items-center">
           <h2 class="font-playfair text-2xl font-bold text-white">
@@ -512,7 +515,7 @@
           </p>
           <button
             id="submit-btn"
-            class="flex items-center rounded py-2 px-4 bg-yellow grayscale shadow-lg !cursor-not-allowed"
+            class="flex items-center rounded py-2 px-4 bg-yellow grayscale shadow-md !cursor-not-allowed"
           >
             <svg
               role="graphics-symbol"
@@ -544,7 +547,7 @@
       <div class="flex justify-center items-center size-full">
         <!-- Modal content -->
         <div
-          class="flex flex-col rounded-xl shadow-md max-w-xl max-h-full bg-white"
+          class="flex flex-col rounded-xl shadow-lg max-w-xl max-h-full bg-white"
         >
           <!-- Modal header -->
           <div
