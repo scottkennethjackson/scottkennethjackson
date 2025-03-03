@@ -38,11 +38,12 @@
       </h1>
     </header>
 
-    <main>
+    <main id="top">
       <section
         id="home"
         class="panel flex z-10 justify-center items-center pt-16 px-4 min-h-screen bg-lightblue snap-start"
       >
+        <div id="view-about" class="absolute top-0"></div>
         <div class="container flex flex-col items-center">
           <h2
             class="font-playfair text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-midnight"
@@ -129,6 +130,7 @@
         </div>
       </section>
 
+      <div id="about-section"></div>
       <section
         id="about"
         class="panel flex relative z-20 justify-center items-center px-4 py-16 min-h-screen bg-yellow shadow-top snap-start"
@@ -188,6 +190,7 @@
         </div>
       </section>
 
+      <div id="experience-section"></div>
       <section
         id="experience"
         class="panel flex relative z-30 justify-center items-center px-4 py-16 min-h-screen bg-offwhite shadow-top snap-start"
@@ -229,6 +232,7 @@
         </div>
       </section>
 
+      <div id="portfolio-section"></div>
       <section
         id="portfolio"
         class="panel flex relative z-40 justify-center items-center py-16 min-h-screen bg-orange shadow-top snap-start"
@@ -672,7 +676,7 @@
           <ul class="text-center md:text-start">
             <li>
               <a
-                href="#home"
+                href="#top"
                 class="font-bold hover:text-yellow active:brightness-90 uppercase"
               >
                 Home
@@ -680,7 +684,7 @@
             </li>
             <li>
               <a
-                href="#about"
+                href="#about-section"
                 class="font-bold hover:text-yellow active:brightness-90 uppercase"
               >
                 About
@@ -688,7 +692,7 @@
             </li>
             <li>
               <a
-                href="#experience"
+                href="#experience-section"
                 class="font-bold hover:text-yellow active:brightness-90 uppercase"
               >
                 Experience
@@ -696,7 +700,7 @@
             </li>
             <li>
               <a
-                href="#portfolio"
+                href="#portfolio-section"
                 class="font-bold hover:text-yellow active:brightness-90 uppercase"
               >
                 Portfolio
