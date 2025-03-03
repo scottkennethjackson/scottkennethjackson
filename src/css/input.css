@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
   font-family: 'Playfair Display';
@@ -112,6 +113,10 @@ button {
 
 canvas {
   cursor: url("../assets/icons/pencil.png"), crosshair;
+}
+
+#slider {
+  /*border: 1px outset #eef0ee;*/
 }
 
 * {
