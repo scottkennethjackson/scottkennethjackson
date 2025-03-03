@@ -617,6 +617,9 @@
   .z-60 {
     z-index: 60;
   }
+  .z-70 {
+    z-index: 70;
+  }
   .z-80 {
     z-index: 80;
   }
@@ -1485,6 +1488,11 @@
   .lg\:right-0 {
     @media (width >= 64rem) {
       right: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:z-80 {
+    @media (width >= 64rem) {
+      z-index: 80;
     }
   }
   .lg\:z-90 {
