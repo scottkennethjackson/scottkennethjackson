@@ -115,10 +115,6 @@ canvas {
   cursor: url("../assets/icons/pencil.png"), crosshair;
 }
 
-#slider {
-  /*border: 1px outset #eef0ee;*/
-}
-
 * {
     /*border: 1px dotted red;*/
 }
